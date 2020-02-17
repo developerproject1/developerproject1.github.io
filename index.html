@@ -1,10 +1,753 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>	</title>
-</head>
-<body>
+<html lang="en">
 
-		<h1>	Hello worldddvsfvsfveefef</h1>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/d827b732b0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="jquery.fancybox.min.css">
+
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script> -->
+
+    <title>Lareine</title>
+</head>
+
+
+<body>
+    <nav>
+        <div class="w3-container">
+            <ul class="nav-links">
+                <li class="links link-act active"><a href="">Ana səhifə</a></li>
+                <li class="links"><a href="">Dırnaq qaynağı</a></li>
+                <li class="links"><a href="">Saç kəsimi</a></li>
+                <li class="links"><a href="">Lazer epilyasiya</a></li>
+                <li class="links"><a href="">Haqqımızda</a></li>
+                <li class="links"><a href="">Əlaqə</a></li>
+                <li>
+                    <div class="dropdown">
+                        <div class="">
+                            <button class="btn btn-secondary dropdown-toggle drop-btn" type="button"
+                                id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                <img src="/img/aze.png">
+                                <span>AZ</span>
+                            </button>
+
+                            <div class="dropdown-menu drop-lang" aria-labelledby="dropdownMenuButton"
+                                x-placement="bottom-start"
+                                style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 36px, 0px);">
+                                <div class="arrow-up"></div>
+                                <a class="dropdown-item border-radius-style" href="/az/"><img
+                                        src="/img/aze.png"><span>AZ</span></a>
+                                <a class="dropdown-item border-radius-style" href="/en/"><img
+                                        src="/img/uk.png"><span>EN</span></a>
+                                <a class="dropdown-item border-radius-style" href="/ru/"><img
+                                        src="/img/russia.png"><span>RU</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- <div class="w3-container">
+        <nav class="navbar navbar-expand-lg navbar-dark newnavbar">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button> 
+        <div  class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <ul class="nav-links">
+                <li class="links link-act active"><a href="">Ana səhifə</a></li>
+                <li class="links"><a href="">Dırnaq qaynağı</a></li>
+                <li class="links"><a href="">Saç kəsimi</a></li>
+                <li class="links"><a href="">Lazer epilyasiya</a></li>
+                <li class="links"><a href="">Haqqımızda</a></li>
+                <li class="links"><a href="">Əlaqə</a></li>
+                <li>
+                    <div class="dropdown">
+                        <div class="">
+                            <button class="btn btn-secondary dropdown-toggle drop-btn" type="button"
+                                id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                <img src="/img/aze.png">
+                                <span>AZ</span>
+                            </button>
+
+                            <div class="dropdown-menu drop-lang" aria-labelledby="dropdownMenuButton"
+                                x-placement="bottom-start"
+                                style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 36px, 0px);">
+                                <div class="arrow-up"></div>
+                                <a class="dropdown-item border-radius-style" href="/az/"><img
+                                        src="/img/aze.png"><span>AZ</span></a>
+                                <a class="dropdown-item border-radius-style" href="/en/"><img
+                                        src="/img/uk.png"><span>EN</span></a>
+                                <a class="dropdown-item border-radius-style" href="/ru/"><img
+                                        src="/img/russia.png"><span>RU</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+                </div> -->
+
+            <!-- <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link" href="#">Features</a>
+                <a class="nav-item nav-link" href="#">Pricing</a>
+              </div>
+            </div> -->
+          </nav>
+    </div>
+
+    <div class="content">
+        <img src="/img/lampa.png" class="lampa" alt="">
+        <div class="w3-container">
+            <div class="info">
+                <img src="/img/logo.png" class="logo" alt="logo">
+                <div class="number">
+                    <img src="/img/call.png" class="icon" alt="icon">
+                    <h2 class="num5">(+99450) 711-99-44</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="carouselExampleIndicators" class="carousel slide slider" data-ride="carousel" >
+        <div class="carousel-bottom-left">
+
+            <div class="indicator-turn"></div>
+
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+
+        </div>
+
+
+        <div class="carousel-inner">
+            <div class="carousel-item item2 active">
+                <h1 class="topic">Daha gözəl görün</h1>
+                <p class="article">Təmiz və yüksək keyfiyyətli məhsullarımızla sizin xidmətinizdəyik <br>
+                    Biz sizi və ailənizi düşünürük!</p>
+                <a href=""><button class="button">ƏTRAFLI <i class="fas fa-angle-double-right"></i></button></a>
+            </div>
+            <div class="carousel-item item2">
+                <h1 class="topic">Daha gözəl görün</h1>
+                <p class="article">Təmiz və yüksək keyfiyyətli məhsullarımızla sizin xidmətinizdəyik <br>
+                    Biz sizi və ailənizi düşünürük!</p>
+                <a href=""><button class="button">ƏTRAFLI <i class="fas fa-angle-double-right"></i></button></a>
+            </div>
+            <div class="carousel-item item2">
+                <h1 class="topic">Daha gözəl görün</h1>
+                <p class="article">Təmiz və yüksək keyfiyyətli məhsullarımızla sizin xidmətinizdəyik <br>
+                    Biz sizi və ailənizi düşünürük!</p>
+                <a href=""><button class="button">ƏTRAFLI <i class="fas fa-angle-double-right"></i></button></a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <section id="about">
+        <div class="w3-container">
+            <div class="about-content">
+                <h3 class="vertical-heading">HAQQIMIZDA</h3>
+
+
+
+
+                <div class="video">
+                    
+                    <iframe class="idk" width="448" height="381" src="https://www.youtube.com/embed/tgbNymZ7vqY"frameborder="0"></iframe>
+
+
+                    <img src="/img/video.png" alt="" class="video-wrap">
+
+
+                    
+                        <div class="play-button play"><img src="/img/play_button.png" alt=""></div>
+                        <div class="big-circ play"><img src="/img/cevre.png" alt=""></div>
+                        <div class="small-circ play"><img src="/img/cevre2.png" alt=""></div>
+                    
+
+
+                </div>
+
+
+                <div class="about-companent">
+                    <div class="right-side">
+                        <img src="/img/ceyran2.png" alt="">
+                        <div class="text-area">
+                            <h3 class="horizantal-heading">HAQQIMIZDA</h3>
+                            <p class="horizantal-paragraph">Zövqlü dizaynı, peşəkar ustaları və zərafəti ilə seçilən La
+                                Reine gözəllik mərkəzi tezliklə xidmətinizdə!</p>
+                            <a href="">DAHA ƏTRAFLI</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="reservsection">
+        <div class="w3-container">
+            <div class="reservation-content">
+                <div class="service-info">
+                    <h2 class="heading-text">XİDMƏTLƏRİMİZ</h2>
+                    <p class="paragraph-text">Zövqlü dizaynı, peşəkar ustaları və </br> zərafəti ilə seçilən La Reine
+                        </br>
+                        gözəllik mərkəzi tezliklə xidmətinizdə!</p>
+                    <a href=""><button class="button">REZERVASİYA <i class="fas fa-angle-double-right"></i></button></a>
+                </div>
+                <div class="service-types">
+
+
+
+
+
+
+
+
+                    <div class="main-service-type">
+                        <div class="circle">
+                            <a class="circle-1" href="">
+                                <div class="service-type">
+                                    <img src="/img/Vector Smart Object.png" class="icon-service-1" alt="" />
+                                </div>
+                            </a>
+                        </div>
+                        <a href="">
+                            <h6 class="span">Dırnaq qaynağı</h6>
+                        </a>
+
+                    </div>
+
+
+                    <div class="main-service-type">
+                        <div class="circle ">
+                            <a class="circle-2" href="">
+                                <div class="service-type">
+                                    <img src="/img/Vector Smart Object-1.png" class="icon-service-2" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <a href="">
+                            <h6 class="span">Saç kəsimi</h6>
+                        </a>
+                    </div>
+                    <div class="main-service-type">
+                        <div class="circle ">
+                            <a class="circle-3" href="">
+                                <div class="service-type">
+                                    <img src="/img/Vector Smart Object-2.png" class="icon-service-3" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <a href="">
+                            <h6 class="span">Make up</h6>
+                        </a>
+                    </div>
+                    <div class="main-service-type">
+                        <div class="circle">
+                            <a class="circle-4" href="">
+                                <div class="service-type">
+                                    <img src="/img/Vector Smart Object-3.png" class="icon-service-4" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <a href="">
+                            <h6 class="span">Kosmetologiya</h6>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="w3-container">
+    <div class="equipments">
+        <h1 class="equ-heading">MÜASİR avadanlıqlar</h1>
+        <div id="carouselExampleControls" class="carousel slide carousel-fade carousel-last" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-3 advant-left">
+                            <div class="advant-1">
+                                <h3 class="advantages-head">ÜSTÜNLÜYÜ</h3>
+                                <p class="advantages-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing
+                                    elit.</p>
+                            </div>
+                            <div class="advant-2">
+                                <h3 class="advantages-head">ÜSTÜNLÜYÜ</h3>
+                                <p class="advantages-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing
+                                    elit.</p>
+                            </div>
+                            <div class="advant-3">
+                                <h3 class="advantages-head">ÜSTÜNLÜYÜ</h3>
+                                <p class="advantages-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing
+                                    elit.</p>
+                            </div>
+                        </div>
+                        <div class="col-6  col -sm equipments-main">
+                            <img src="/img/anesthesia-machines.png" class="equipment pic1" alt="">
+                        </div>
+                        <div class="col-3 advant-right">
+                            <div class="advant-4">
+                                <h3 class="advantages-head">ÜSTÜNLÜYÜ</h3>
+                                <p class="advantages-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing
+                                    elit.</p>
+                            </div>
+                            <div class="advant-5">
+                                <h3 class="advantages-head">ÜSTÜNLÜYÜ</h3>
+                                <p class="advantages-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing
+                                    elit.</p>
+                            </div>
+                            <div class="advant-6">
+                                <h3 class="advantages-head">ÜSTÜNLÜYÜ</h3>
+                                <p class="advantages-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing
+                                    elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-3 advant-left">
+                            <div class="advant-1">
+                                <h3 class="advantages-head">ÜSTÜNLÜYÜ</h3>
+                                <p class="advantages-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing
+                                    elit.</p>
+                            </div>
+                            <div class="advant-2">
+                                <h3 class="advantages-head">ÜSTÜNLÜYÜ</h3>
+                                <p class="advantages-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing
+                                    elit.</p>
+                            </div>
+                            <div class="advant-3">
+                                <h3 class="advantages-head">ÜSTÜNLÜYÜ</h3>
+                                <p class="advantages-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing
+                                    elit.</p>
+                            </div>
+                        </div>
+                        <div class="col-6 equipments-main">
+                            <img src="/img/hironic-doublo-gold-990x990.png" class="equipment" alt="">
+                        </div>
+                        <div class="col-3 advant-right">
+                            <div class="advant-4">
+                                <h3 class="advantages-head">ÜSTÜNLÜYÜ</h3>
+                                <p class="advantages-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing
+                                    elit.</p>
+                            </div>
+                            <div class="advant-5">
+                                <h3 class="advantages-head">ÜSTÜNLÜYÜ</h3>
+                                <p class="advantages-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing
+                                    elit.</p>
+                            </div>
+                            <div class="advant-6">
+                                <h3 class="advantages-head">ÜSTÜNLÜYÜ</h3>
+                                <p class="advantages-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing
+                                    elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-3 advant-left">
+                            <div class="advant-1">
+                                <h3 class="advantages-head">ADVANTAGE</h3>
+                                <p class="advantages-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing
+                                    elit.</p>
+                            </div>
+                            <div class="advant-2">
+                                <h3 class="advantages-head">ADVANTAGE</h3>
+                                <p class="advantages-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing
+                                    elit.</p>
+                            </div>
+                            <div class="advant-3">
+                                <h3 class="advantages-head">ADVANTAGE</h3>
+                                <p class="advantages-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing
+                                    elit.</p>
+                            </div>
+                        </div>
+                        <div class="col-6 equipments-main">
+                            <img src="/img/hironic-doublo-gold-990x990.png" class="equipment pic1" alt="">
+                        </div>
+                        <div class="col-3 advant-right">
+                            <div class="advant-4">
+                                <h3 class="advantages-head">ÜSTÜNLÜYÜ</h3>
+                                <p class="advantages-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing
+                                    elit.</p>
+                            </div>
+                            <div class="advant-5">
+                                <h3 class="advantages-head">ÜSTÜNLÜYÜ</h3>
+                                <p class="advantages-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing
+                                    elit.</p>
+                            </div>
+                            <div class="advant-6">
+                                <h3 class="advantages-head">ÜSTÜNLÜYÜ</h3>
+                                <p class="advantages-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing
+                                    elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <a  class="carousel-control-prev " href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon arrow-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next " href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="grid-container">
+        <div class="grid-item1"></div>
+        <div class="grid-item2"></div>
+        <div class="grid-item3"></div>
+        <div class="grid-item4"></div>
+        <div class="grid-item5"></div>
+        <div class="grid-item6"></div>
+        <div class="grid-item7"></div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="last-section">
+        <div class="first-last">
+            <div class="numb">
+                (+99450) 711-99-44
+            </div>
+            <div class="time">İş vaxtları 09:00-22:00</div>
+            <div>
+                <a href=""><button class="button">REZERVASİYA <i class="fas fa-angle-double-right"></i></button></a>
+            </div>
+        </div>
+
+
+
+        <div class="w3-container">
+            <div class="address-section">
+                <div class="address">
+                    <h1 class="street">Faiq Yusifov və Nazim Hacıyev küç. 20 kəsişməsi</h1>
+                    <p class="address-paragraph">Zövqlü dizaynı, peşəkar ustaları və zərafəti ilə seçilən La Reine
+                        gözəllik mərkəzi
+                        tezliklə xidmətinizdə!</p>
+                </div>
+
+
+                <div class="photo-last">
+                    <img src="/img/last-photo.png" alt="">
+                </div>
+            </div>
+        </div>
+
+
+        <section id="map">
+
+        </section>
+
+        <div class="w3-container">
+            <div class="copysection">
+                <div class="social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                <p class="copyright">Bütün hüquqlar qorunur-Copyright 2020</p>
+            </div>
+        </div>
+        
+    </div>
+
+
+    
+   
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="jquery.fancybox.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="script.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmuy79KEiGsKJR5hiueSfAtaXuwcHgpwI&callback=initMap">
+    </script>
+    <script>
+        function initMap() {
+            var uluru = {
+                lat: 40.4022221,
+                lng: 49.8747449
+            };
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 14,
+                center: uluru,
+                ///////
+                styles: [{
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "color": "#e2e2e2"
+                    }]
+                }, {
+                    "elementType": "labels.text.fill",
+                    "stylers": [{
+                        "color": "#523735"
+                    }]
+                }, {
+                    "elementType": "labels.text.stroke",
+                    "stylers": [{
+                        "color": "#f5f1e6"
+                    }]
+                }, {
+                    "featureType": "administrative",
+                    "elementType": "geometry.stroke",
+                    "stylers": [{
+                        "color": "#c9b2a6"
+                    }]
+                }, {
+                    "featureType": "administrative.land_parcel",
+                    "elementType": "geometry.stroke",
+                    "stylers": [{
+                        "color": "#dcd2be"
+                    }]
+                }, {
+                    "featureType": "administrative.land_parcel",
+                    "elementType": "labels.text.fill",
+                    "stylers": [{
+                        "color": "#ae9e90"
+                    }]
+                }, {
+                    "featureType": "landscape.natural",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "color": "#dfd2ae"
+                    }]
+                }, {
+                    "featureType": "poi",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "color": "#dfd2ae"
+                    }]
+                }, {
+                    "featureType": "poi",
+                    "elementType": "labels.text.fill",
+                    "stylers": [{
+                        "color": "#93817c"
+                    }]
+                }, {
+                    "featureType": "poi.park",
+                    "elementType": "geometry.fill",
+                    "stylers": [{
+                        "color": "#55ac6a"
+                    }]
+                }, {
+                    "featureType": "poi.park",
+                    "elementType": "labels.text.fill",
+                    "stylers": [{
+                        "color": "#447530"
+                    }]
+                }, {
+                    "featureType": "road",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "color": "#f5f1e6"
+                    }]
+                }, {
+                    "featureType": "road.arterial",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "color": "#fdfcf8"
+                    }]
+                }, {
+                    "featureType": "road.highway",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "color": "#f8c967"
+                    }]
+                }, {
+                    "featureType": "road.highway",
+                    "elementType": "geometry.stroke",
+                    "stylers": [{
+                        "color": "#e9bc62"
+                    }]
+                }, {
+                    "featureType": "road.highway.controlled_access",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "color": "#e98d58"
+                    }]
+                }, {
+                    "featureType": "road.highway.controlled_access",
+                    "elementType": "geometry.stroke",
+                    "stylers": [{
+                        "color": "#db8555"
+                    }]
+                }, {
+                    "featureType": "road.local",
+                    "elementType": "labels.text.fill",
+                    "stylers": [{
+                        "color": "#806b63"
+                    }]
+                }, {
+                    "featureType": "transit.line",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "color": "#dfd2ae"
+                    }]
+                }, {
+                    "featureType": "transit.line",
+                    "elementType": "labels.text.fill",
+                    "stylers": [{
+                        "color": "#8f7d77"
+                    }]
+                }, {
+                    "featureType": "transit.line",
+                    "elementType": "labels.text.stroke",
+                    "stylers": [{
+                        "color": "#e2e2e2"
+                    }]
+                }, {
+                    "featureType": "transit.station",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "color": "#dfd2ae"
+                    }]
+                }, {
+                    "featureType": "water",
+                    "elementType": "geometry.fill",
+                    "stylers": [{
+                        "color": "#b9d3c2"
+                    }]
+                }, {
+                    "featureType": "water",
+                    "elementType": "labels.text.fill",
+                    "stylers": [{
+                        "color": "#92998d"
+                    }]
+                }]
+
+                /////
+            });
+
+            var image = {
+                url: "/img/marker.png",
+                // This marker is 20 pixels wide by 32 pixels high.
+                size: new google.maps.Size(60, 60),
+                // The origin for this image is (0, 0).
+                origin: new google.maps.Point(0, 0),
+                // The anchor for this image is the base of the flagpole at (0, 32).
+                anchor: new google.maps.Point(22, 42)
+            };
+
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map,
+                icon: image
+            });
+        }
+    </script>
 </body>
+
 </html>
+
+<!--Zövqlü dizaynı, peşəkar ustaları və zərafəti ilə seçilən La Reine gözəllik mərkəzi tezliklə xidmətinizdə!
+Faiq Yusifov və Nazim Hacıyev küç. 20 kəsişməsi-->
