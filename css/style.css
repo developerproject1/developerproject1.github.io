@@ -10,7 +10,8 @@
   height: 100%;
   background-color: #404040;
   right: -250px;
-  transition: all 500ms linear;
+  z-index: 2;
+  transition: all .2s linear;
 }
 
 #sidebar.active {
@@ -26,7 +27,8 @@
 
 .toggle-btn {
   position: absolute;
-  left:-102px;
+  /*left:-102px;*/
+  right: 20px;
   top: 15px;
 }
 
