@@ -1,0 +1,39 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+
+#sidebar {
+  position: fixed;
+  width: 250px;
+  height: 100%;
+  background-color: #404040;
+  right: -250px;
+  transition: all 500ms linear;
+}
+
+#sidebar.active {
+  right: 0px;
+}
+
+#sidebar ul li {
+  color: white;
+  style: none;
+  padding: 15px 10px;
+  border-bottom: 1px solid white;
+}
+
+.toggle-btn {
+  position: absolute;
+  left:-102px;
+  top: 15px;
+}
+
+.toggle-btn span {
+  background-color: #404040;
+  display: block;
+  height: 5px;
+  width: 30px;
+  margin: 5px 0px;
+}
