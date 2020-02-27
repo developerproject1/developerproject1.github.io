@@ -1,37 +1,155 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/style.css">
-  <title>GitHubProject - Side NavBar</title>
+	<title></title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
 </head>
 <body>
-     <div class="toggle-btn" onclick="toggleNavBar()">
-       <span></span>
-       <span></span>
-       <span></span>
-     </div>
-  <div class="" id="sidebar">
-    <ul>
-       <div class="" onclick="toggleNavBar()">
-       <h2>X</h2>
-     </div>
-      <li>Home</li>
-      <li>About</li>
-      <li>About</li>
-      <li>About</li>
-      <li>About</li>
-      <li>About</li>
-      <li>About</li>
-      <li>Contact Us</li>
 
-    </ul>
+
+  <nav class="acive" id="sidebar">
+	
+<div class="toggle-btn in">
+	     <span></span>
+	     <span></span>
+     </div>
+	
+  	<ul class="nav flex-column">
+
+		  <li class="nav-item active">
+		    <a class="nav-link text-white" href="#">Active</a>
+		  </li>
+		  <li class="nav-item">
+		    <a class="nav-link text-white" href="#">Link</a>
+		  </li>
+		  <li class="nav-item">
+		    <a class="nav-link text-white" href="#">Link</a>
+		  </li>
+		  <li class="nav-item">
+		    <a class="nav-link text-white" href="#">Link</a>
+		  </li>
+		  <li class="nav-item">
+		    <a class="nav-link text-white" href="#">Link</a>
+		  </li>
+		  <li class="nav-item">
+		    <a class="nav-link text-white" href="#">Link</a>
+		  </li>
+		  <li class="nav-item">
+		    <a class="nav-link text-white" href="#">Link</a>
+		  </li>
+		  <li class="nav-item">
+		    <a class="nav-link text-white" href="#">Link</a>
+		  </li>
+		  
+		</ul>
+  </nav>
+
+
+<!-- header -->
+  <div class="container-fluid" style="position: fixed; z-index: 6">
+  	<div class="row">
+  		<div class="col-md-12">
+  			<div class="container">
+  				<div class="row">
+  					<div class="col-md-3">
+  						<div class="logoimage">
+  							<img src="/img/logo2.png">
+  						</div>
+  					</div>
+  					<div class="col-md-2">
+  						<div class="lang">
+  							<span class="langimg"><img src="/img/az.png"></span>
+  							<span class="text-white mx-1">Azərbaycanca</span>
+  							<span class="nextpng"><img src="/img/next.png"></span>
+  						</div>
+  					</div>
+  					<div class="col-md-1 search">
+  						<form action="">
+						  <input placeholder="Axtar.." type="search">
+						  <img src="/img/search.png" class="fa" height="100%" width="100%">
+						</form>
+  					</div>
+  					<div class="col-md-3 text-white">
+  						<div class="phonenumber">
+  							<img src="/img/phone.png"><a href=""  class="nav-link  text-white d-inline">(+99450)04982082</a>
+  						</div>
+  					</div>
+  					<div class="col-md-2">
+  						<button class="btn button btn-warning text-white">Online mağaza</button>
+  					</div>
+  					<div class="col-md-1">
+  						<div class="toggle-btn out">
+						     <span></span>
+						     <span></span>
+						     <span></span>
+					     </div>
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
   </div>
 
 
-  <div class="h"><h1>egrthbrgvefwcdxs</h1></div>
-  <script src="js/main.js"></script>
+
+  <!-- slider -->
+  <div class="bd-example">
+  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+      	<div class="overlay"></div>
+        <img src="/img/slider.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+      	<div class="overlay"></div>
+        <img src="/img/slider.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+      	<div class="overlay"></div>
+        <img src="/img/slider.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+
+
+
+			<script src="/js/jquery-3.3.1.slim.min.js"></script>
+			<script src="/js/popper.min.js"></script>
+			<script src="/js/bootstrap.min.js"></script>
+			<script src="/js/jquery.fancybox.min.js"></script>
+			<script src="/js/main.js"></script>
 </body>
 </html>

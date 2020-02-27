@@ -1,0 +1,294 @@
+
+
+
+.highslide-controls {
+    width: 195px;
+    height: 40px;
+    background: url(../../../engine/classes/highslide/graphics/controlbar-black-border.gif) 0 -90px no-repeat;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.highslide-controls ul {
+	position: relative;
+	left: 15px;
+    height: 40px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: url(../../../engine/classes/highslide/graphics/controlbar-black-border.gif) right -90px no-repeat;
+}
+.highslide-controls li {
+    float: left;
+    padding: 5px 0;
+}
+.highslide-controls a {
+    background: url(../../../engine/classes/highslide/graphics/controlbar-black-border.gif);
+    display: block;
+    float: left;
+    height: 30px;
+    width: 30px;
+    outline: none;
+}
+.highslide-controls a.disabled {
+    cursor: default;
+}
+.highslide-controls a span {
+    /* hide the text for these graphic buttons */
+    display: none;
+}
+ 
+/* The CSS sprites for the controlbar */
+.highslide-controls .highslide-previous a {
+    background-position: 0 0;
+}
+.highslide-controls .highslide-previous a:hover {
+    background-position: 0 -30px;
+}
+.highslide-controls .highslide-previous a.disabled {
+    background-position: 0 -60px !important;
+}
+.highslide-controls .highslide-play a {
+    background-position: -30px 0;
+}
+.highslide-controls .highslide-play a:hover {
+    background-position: -30px -30px;
+}
+.highslide-controls .highslide-play a.disabled {
+	background-position: -30px -60px !important;
+}
+.highslide-controls .highslide-pause a {
+    background-position: -60px 0;
+}
+.highslide-controls .highslide-pause a:hover {
+    background-position: -60px -30px;
+}
+.highslide-controls .highslide-next a {
+    background-position: -90px 0;
+}
+.highslide-controls .highslide-next a:hover {
+    background-position: -90px -30px;
+}
+.highslide-controls .highslide-next a.disabled {
+    background-position: -90px -60px !important;
+}
+.highslide-controls .highslide-move a {
+    background-position: -120px 0;
+}
+.highslide-controls .highslide-move a:hover {
+    background-position: -120px -30px;
+}
+.highslide-controls .highslide-full-expand a {
+    background-position: -150px 0;
+}
+.highslide-controls .highslide-full-expand a:hover {
+    background-position: -150px -30px;
+}
+.highslide-controls .highslide-full-expand a.disabled {
+    background-position: -150px -60px !important;
+}
+.highslide-controls .highslide-close a {
+    background-position: -180px 0;
+}
+.highslide-controls .highslide-close a:hover {
+    background-position: -180px -30px;
+}
+
+
+
+#sidebar {
+  position: fixed;
+  width: 350px;
+  height: 100%;
+  background-color: #4b3441;
+  right: -100%;
+  z-index: 18;
+  transition: all .3s linear;
+  display: flex;
+  justify-content: center;
+  align-items:  center;
+}
+
+#sidebar.active {
+  right: 0px;
+}
+.nav{
+    width: 100%;
+    text-align: center;
+}
+.nav li {
+    padding: 10px;
+    width: 100%;
+    transition: 0.3s ease-in-out;
+}
+.nav li:hover {
+    background: #f3a35a;
+    transition: 0.3s ease-in-out;
+}
+
+.nav li a{
+    width: 100%;
+    font-size: 20px;
+}
+
+.toggle-btn.out {
+  position: absolute;
+  right: 0px;
+  cursor: pointer;
+  top: 35px;
+}
+.toggle-btn.in {
+  position: absolute;
+  left: 10%;
+  cursor: pointer;
+  top: 8px;
+  padding: 40px;
+}
+
+.toggle-btn span {
+  background-color: white;
+  display: block;
+  height: 4px !important;
+  margin: 8px 0px;
+}
+
+
+.out{
+    transform: rotateY(180deg);
+    position: relative;
+    z-index: 5;
+}
+.in, .out span:nth-child(1){
+    width: 15px;
+}
+.out span:nth-child(2){
+    width: 30px;
+}
+
+.out span:nth-child(3){
+    width: 25px;
+}
+
+.in span{
+    width: 40px;
+    height: 3px;
+}
+.in span:nth-child(1){
+   transform: rotate(45deg);
+        transform-origin: 45% 0%;
+
+}
+.in span:nth-child(2){
+   transform: rotate(-45deg);
+       transform-origin: 10% 30%;
+}
+/*header*/
+.logoimage{
+    height:96px;
+    /*width: 267px;*/
+    display: flex;
+    justify-content: center;
+    background: white;
+   border-bottom-left-radius: 20px;
+   border-bottom-right-radius: 20px;
+   padding:0  8px;
+}
+.logoimage img{
+    height: 70%;
+    margin-top: 10px;
+    width: 90%;
+}
+
+.phonenumber ,.lang{
+    transform: translateY(41px);
+}
+
+.search form{
+    position: relative;
+    /*transform: translate(-50%,-50%);*/
+    transition: all 1s;
+    width: 45px;
+    height: 45px;
+    /*background: white;*/
+    z-index: 3;
+    box-sizing: border-box;
+    border-radius: 25px;
+    /*border: 4px solid white;*/
+    padding: 5px;
+    transform: translateY(35px);
+}
+
+.search input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;;
+    height: 40px;
+    line-height: 30px;
+    outline: 0;
+    z-index: 44;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+.search .fa{
+    box-sizing: border-box;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    z-index: 45;
+    right: 0;
+    border-radius: 50%;
+    color: #07051a;
+    text-align: center;
+    /*font-size: 1.2em;*/
+    transition: all 1s;
+}
+
+.search form:hover{
+    width: 300px;
+    cursor: pointer;
+}
+
+.search form:hover input{
+    display: block;
+}
+
+.search form:hover .fa{
+    background: #07051a;
+    color: white;
+}
+
+.button{
+     width: 195px;
+    height: 54px;
+    font-weight: bold;
+    transform: translate(-30px, 28px);
+    background: #f3a35a !important; 
+}
+
+
+
+
+/*next*/
+
+.caroulsel-item{
+    position: relative;
+}
+.overlay{
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: background: rgb(169,107,77);
+    background: linear-gradient(45deg, rgba(169,107,77,1) 0%, rgba(93,59,68,1) 50%, rgba(53,33,62,1) 100%);
+    opacity: 0.8;
+    z-index: 4;
+}
