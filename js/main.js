@@ -2,6 +2,8 @@
 //   document.getElementById("sidebar").classList.toggle("active");
 // }
 
+$(document).ready(function () {
+
 var bar = new ProgressBar.Circle(pbCircle, {
   color: '#000',
   strokeWidth: 1,
@@ -11,8 +13,8 @@ var bar = new ProgressBar.Circle(pbCircle, {
   text: {
     autoStyleContainer: true
   },
-  from: { color: '#ffc107', width: 1 },
-  to: { color: '#f3a35a', width: 1 }, 
+  from: { color: '#eda44c', width: 1 },
+  to: { color: '#eda44c', width: 1 }, 
   step: function(state, circle) {
     circle.path.setAttribute('stroke', state.color);
     circle.path.setAttribute('stroke-width', state.width);
@@ -46,3 +48,33 @@ $(".lang").click(function () {
 	$('.opened').slideToggle();
 	$('.nextpng img').toggleClass("iconrotate");
 });
+
+ 
+
+ $('.carousel-mehsul').owlCarousel({
+    loop:true,
+    autoplay: true,
+    margin:10,
+    padding:10,
+    dots:true,
+    items:4,	
+    nav:false,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+        },
+        600:{
+            items:2,
+        },
+        1000:{
+            items:4,
+        }
+    }
+    
+    
+    
+})
+
+});
+
