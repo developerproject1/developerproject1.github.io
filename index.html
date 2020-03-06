@@ -56,7 +56,7 @@
 
 
 <!-- header -->
-  <div class="container-fluid" style="position: fixed; z-index: 10">
+  <div class="container-fluid" style="position: absolute; z-index: 10">
   	<div class="row">
   		<div class="col-md-12">
   			<div class="container">
@@ -156,28 +156,21 @@
         
     <!-- play button  -->
 
-    <div class="maincircle">
-    	   <div class="effect">
-              <div class="circle-wrap">
-                <div class="circle">
-                  <div class="circle-white"></div>
-                  <div class="mask full">
-                    <div class="fill"></div>
-                  </div>
-                  <div class="mask half">
-                    <div class="fill"></div>
-                  </div>
-                  <div class="inside-circle"></div>
-                </div>
-              </div>
-              <span></span>
-            </div>
-    </div>
-
-
-
 
    <div class="carousel-inner">
+         <div class="container" style="position: relative; width: 100%; height: 100%;" >
+          <div class="maincircle">
+               <div id="pbCircle" class="progressbar-circle">
+                    <div class="secondcircle">
+                      <div class="thirdcircle">
+                        <img src="img/play.png" alt="">
+                      </div>
+                    </div>  
+               </div>
+               
+        </div>
+      </div>
+
     	<!-- item -->
       <div class="carousel-item active">
         <img src="img/slider.png" class="d-block w-100" alt="...">  
@@ -272,13 +265,15 @@
    	<!-- carusel divs -->
   </div>
 </div>
-<!-- 
+
 
 
 <div class="container">
-	<h1>sfdgudhjnimkl</h1>
-</div> -->
-
+ 
+</div>
+      
+<!-- partial -->
+  <script src="js/progressbar.js"></script>
 			<script src="js/jquery-3.3.1.slim.min.js"></script>
 			<script
   src="https://code.jquery.com/jquery-3.4.1.js"

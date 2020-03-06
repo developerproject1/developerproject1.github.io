@@ -1,6 +1,5 @@
 
 
-
 .highslide-controls {
     width: 195px;
     height: 40px;
@@ -340,10 +339,10 @@
 
 
 /*next*/
-.bd-example{
+/*.bd-example{
     height: 640px !important;
 
-}
+}*/
 .caroulsel-item{
     position: relative;
 }
@@ -459,77 +458,56 @@
 .maincircle{
     position: absolute;
     z-index: 13;
-    right: 20%;
-    top: 40%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 400px;
-    width: 400px;
-    text-align: center;
+    right: 0;
+    top: 300px; 
 }
-
-.effect {
+.progressbar-circle {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 350px;
+  height: 350px;
   position: relative;
-  border-radius: 50%;
-  padding: 0;
-  background: transparent;
-  cursor: pointer;
 }
-.effect .circle-wrap {
-  width: 26px;
-  height: 26px;
-  border-radius: 50%;
-  position: relative;
-  top: 4px;
-  left: 10px;
+.progressbar-circle .progressbar-text {
+  font-size: 34px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.18;
+  letter-spacing: normal;
+  text-align: center;
 }
-.effect .circle-wrap .circle .mask,
-.effect.circle-wrap .circle .fill {
-  width: 26px;
-  height: 26px;
+
+.secondcircle{
+    transform: rotate(-62deg);
   position: absolute;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
+  border: 1.5px dashed #eda44c;
+  border-bottom-color:transparent; 
+  border-left-color:transparent; 
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
-.effect .circle-wrap .circle .mask {
-  clip: rect(0px, 26px, 26px, 13px);
-}
-.effect .circle-wrap .circle .mask .fill {
-  clip: rect(0px, 13px, 26px, 0px);
-  border: 3px solid #1e419b;
-}
- .effect .circle-wrap .circle .mask.full,
- .effect .circle-wrap .circle .fill {
-  animation: fill ease-in-out 5s;
-  transform: rotate(180deg);
-}
-@keyframes fill {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(180deg);
-  }
-}
-.circle-white {
-  width: 26px;
-  height: 26px;
+.thirdcircle{
+    transform: rotate(146deg);
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
-  border: 3px solid #fff;
-  position: absolute;
+  border: 20px solid #eda44c;
+  border-bottom-color:transparent; 
+  border-left-color:transparent; 
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
-
-.effect .circle-wrap .inside-circle {
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background: transparent;
-  position: absolute;
-  z-index: 100;
+.thirdcircle img{
+    transform: rotate(156deg);
 }
-
-
-
-
-
 
