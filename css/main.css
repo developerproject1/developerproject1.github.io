@@ -515,14 +515,14 @@
 
 
 .product{
-    margin-top: 40px;
+    margin-top: 25px;
     margin-bottom:60px;
 }
 /*tabs*/
 .nav-tabs .nav-item .nav-link{
     font-size: 20px;
     color: #acacac;
-    padding-bottom: 40px !important;
+    padding-bottom: 34px !important;
       border-bottom: 2px solid transparent;
       transition: 0.3s ease-in-out
 }
@@ -551,7 +551,10 @@
     justify-content: center;
     align-items: center;
 }
-
+.owl-carousel button.owl-dot:active ,.owl-carousel button.owl-dot:focus{
+    outline: none !important;
+    border:none !important;
+}
 .owl-carousel button.owl-dot {
     border: none;
     padding: 0!important;
@@ -584,6 +587,10 @@
     position: absolute;
     transform: translateY(-200px);
     z-index: -1;
+}
+.owl-carousel .owl-stage-outer{
+    max-height: 230px;
+    overflow: hidden;
 }
 
 
