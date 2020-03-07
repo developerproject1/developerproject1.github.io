@@ -237,7 +237,11 @@
     text-align: center;
 }
 .opened{
+    position: absolute;
+    z-index: 5;
+    background: darkgray;
     margin-top: 20px;
+    padding-right: 50px;
     padding-bottom: 3px;
     padding-top: 3px;
     border:1px solid white;
@@ -348,16 +352,16 @@
 }
 .carousel-caption{
     left: 0;
-    bottom:300px;
+    bottom :200px;
 }
 
 .carousel-caption h1:nth-child(1){
     font-weight: normal !important;
-    font-size: 55px !important;
+    font-size: 45px !important;
 }
 .carousel-caption h1:nth-child(2){
     font-weight: bold !important;
-    font-size: 55px !important;
+    font-size: 35px !important;
 }
 .overlay{
     position: absolute;
@@ -459,15 +463,15 @@
     position: absolute;
     z-index: 13;
     right: 0;
-    top: 250px; 
+    top: 160px; 
 }
 .progressbar-circle {
   display: flex;
   justify-content: center;
   align-content: center;
   align-items: center;
-  width: 350px;
-  height: 350px;
+  width: 300px;
+  height: 300px;
   position: relative;
 }
 .progressbar-circle .progressbar-text {
@@ -483,8 +487,8 @@
 .secondcircle{
     transform: rotate(-62deg);
   position: absolute;
-  width: 300px;
-  height: 300px;
+  width: 80%;
+  height: 80%;
   border-radius: 50%;
   border: 1.5px dashed #eda44c;
   border-bottom-color:transparent; 
@@ -496,8 +500,8 @@
 }
 .thirdcircle{
     transform: rotate(146deg);
-  width: 250px;
-  height: 250px;
+  width: 80%;
+  height: 80%;
   border-radius: 50%;
   border: 20px solid #eda44c;
   border-bottom-color:transparent; 
@@ -593,5 +597,40 @@
     overflow: hidden;
 }
 
+/*medias*/
 
+@media screen and (min-width: 1320px) {
+    .carousel-caption{
+    bottom :250px !important;
+}
+.maincircle{
+    top: 220px; 
+}
 
+}
+@media screen and (max-width: 1220px) {
+      .carousel-caption{
+    bottom :450px !important;
+}
+.maincircle{
+    top: 220px; 
+}
+}
+@media screen and (max-width: 1199px) {
+
+}
+@media screen and (max-width: 991px) {
+
+}
+@media screen and (max-width: 767px) {
+
+}
+@media screen and (max-width: 576px) {
+
+}
+@media screen and (max-width: 440px) {
+
+}
+@media screen and (max-width: 392px) {
+
+}
