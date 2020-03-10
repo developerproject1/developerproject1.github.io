@@ -661,6 +661,13 @@
 .textnews{
   transform: translate(48px , 84px);
 }
+/*gallery;*/
+  .gallery {
+    padding-bottom: 201px;
+    padding-top: 80px;
+  }
+/*gallery;*/
+
 /*medias*/
 
 @media screen and (min-width: 1320px) {
