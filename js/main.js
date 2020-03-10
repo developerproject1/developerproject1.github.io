@@ -9,7 +9,7 @@ var bar = new ProgressBar.Circle(pbCircle, {
   strokeWidth: 1,
   trailWidth: 1,
   easing: 'easeInOut',
-  duration: 2000,
+  duration: 4000,
   text: {
     autoStyleContainer: true
   },
@@ -30,7 +30,7 @@ var bar = new ProgressBar.Circle(pbCircle, {
 	});
 
 $('.carousel').carousel({
-  interval: 2000
+  interval: 4000
 })
 
 $(".toggle-btn").click(function () {
@@ -70,11 +70,10 @@ $(".lang").click(function () {
         1000:{
             items:4,
         }
-    }
-    
-    
-    
-})
+    }   
+});
+
+// documenr ready 
 
 });
 
