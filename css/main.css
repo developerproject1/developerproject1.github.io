@@ -215,7 +215,7 @@ src: url(data:font/opentype;charset=utf-8;base64,T1RUTwAJAIAAAwAQQ0ZGIAUZfx0AAAR
 }
 
 body{
-  font-family:  Futura !important;
+  font-family:  "Montserrat" !important;
 }
 /*header*/
 .logoimage{
@@ -299,7 +299,7 @@ body{
     z-index: 44;
     border: 0;
     display: none;
-    font-size: 1em;
+    font-size: 13px;
     border-radius: 20px;
     padding: 0 20px;
 }
@@ -351,13 +351,17 @@ body{
     display: block;
     transition: 0.9s ease-in-out;
 }
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: Monserrat;
+}
 .drop1 .drop2{
     width: 100%;
-       padding-bottom: 5px;
+         padding-bottom: 3px;
     transition: 0.4s ease-in-out;
-    padding-top: 2px;
+    padding-top: 3px;
     padding-right: 3px;
-    padding-left: 2px;
+    padding-left: 1px;
     border:none;
     border-radius: 15px;
     background-color: #f5f5f5;
@@ -437,6 +441,7 @@ body{
 }
 .navbar-nav li .nav-span{
   color: white;
+  font-weight: 600;
 }
 .navbar-nav li .nav-span:after {
     content: "";
