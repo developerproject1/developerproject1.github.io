@@ -442,6 +442,7 @@ button, input, optgroup, select, textarea {
 .navbar-nav li .nav-span{
   color: white;
   font-weight: 600;
+  font-size: 14px;
 }
 .navbar-nav li .nav-span:after {
     content: "";
@@ -457,7 +458,9 @@ button, input, optgroup, select, textarea {
   width: 100%;
    transition: 500ms all ease;
 }
-
+.navbar-nav .nav-link{
+  padding: 10px !important;
+}
 
 
 
@@ -930,6 +933,7 @@ footer ul li a{
   position: relative;
   color:#646464;
   padding-left:20px;
+  text-decoration: none;
   font-size: 14px;
   line-height: 31px;
   transition: 0,3s ease-in-out;
