@@ -1044,9 +1044,9 @@ footer p{margin-bottom:10px}
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
   background-color: #f6f6f6;
 }
-.lang-footer img{width:23px}
+.lang-footer img{width:20px}
 .lang-caption{
-    font-size: 14px;
+    font-size: 12px;
     color: #646464;
 }
 .footer-bottom {
