@@ -18,43 +18,6 @@
 <body>
 
 
-<!-- 
->>>>>>> c7a2f0b65553667f47735807dbfc6555af306e9e
-  <section id="overlay" class=""></section>
-  
-  <nav class="" id="sidebar">
-	<div class="toggle-btn in">
-	     <span></span>
-	     <span></span>
-    </div>
-
-	<ul class="nav flex-column">
-	  <li class="nav-item active">
-	    <a class="nav-link" href="#">Ana səhifə</a>	  </li>
-	  <li class="nav-item">
-	    <a class="nav-link" href="#">Link</a>
-	  </li>
-	  <li class="nav-item">
-	    <a class="nav-link" href="#">Link</a>
-	  </li>
-	  <li class="nav-item">
-	    <a class="nav-link" href="#">Link</a>
-	  </li>
-	  <li class="nav-item">
-	    <a class="nav-link" href="#">Link</a>
-	  </li>
-	  <li class="nav-item">
-	    <a class="nav-link" href="#">Link</a>
-	  </li>
-	  <li class="nav-item">
-	    <a class="nav-link" href="#">Link</a>
-	  </li>
-	  <li class="nav-item">
-	    <a class="nav-link" href="#">Link</a>
-	  </li>
-	</ul>
-  </nav> -->
-
 
 <!-- header -->
   <div class="container-fluid" style="position: absolute; z-index: 10">
@@ -63,85 +26,87 @@
   			<div class="container">
   				<div class="row">
   					<div class="col-md-3">
-  						<div class="logoimage">
+  						<a href="/" class="logoimage">
   							<img src="img/logo2.png">
-  						</div>
+  						</a>
   					</div>
-  					<div class="col-md-2">
-  						<div class="lang">
-  							<a href="#" class="text-decoration-none text-white ">
-	  							<span class="langimg ml-2"><img src="img/az.png"></span>
-	  							Azərbaycanca
-  							</a>
-  							<span class="nextpng"><img class="iconrotate" src="img/next.png"></span>
-  						</div>
-
-  						<div class="opened" style="display:  none;">
-  							<div class="lngtype">
-	  							<a href="#" class="text-decoration-none text-white mx-1 ">
-	  								<span class="langimg"><img src="img/russia.png"></span>
-	  								Ingiliscə
-	  							</a>
-  							</div>
-
-  							<div class="lngtype">
-	  							<a href="#" class="mx-1 text-decoration-none text-white ">
-	  								<span class="langimg"><img src="img/uk.png"></span>
-	  								Rusca
-	  							</a>
-  							</div>
-  						</div>
-  					</div>
-  					<div class="col-md-1 search">
-  						<form action="">
-						  <input placeholder="Axtar.." type="search">
-						  <img src="img/search.png" class="fa" height="100%" width="100%">
-						</form>
-  					</div>
-  					<div class="col-md-3 text-white">
+  					<!-- <div class="col-md-3 text-white">
   						<div class="phonenumber">
   							<img src="img/phone.png"><a href=""  class="nav-link  text-white d-inline">(+99450)04982082</a>
   						</div>
-  					</div>
-  					<div class="col-md-3">
-  						<button class="btn button btn-warning text-white">Online mağaza</button>
-  					</div>
-  					<!-- <div class="col-md-1">
-  						<div class="toggle-btn out">
-						     <span></span>
-						     <span></span>
-						     <span></span>
-					     </div>
   					</div> -->
+  					<!-- <div class="col-md-3">
+  						<button class="btn button btn-warning text-white">Online mağaza</button>
+  					</div> -->
+            
+
+            <nav class="col-md-9 navbar navbar-expand-lg navbar-dark ">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav m-auto">
+                    <li class="mr-5 pr-5 nav-item">
+                        <div class=" search">
+                          <form action="">
+                          <input placeholder="Axtar.." type="search">
+                          <button class="searchbtn" type="submit">
+                             <img src="img/search.png" class="fa" height="100%" width="100%">
+                          </button>
+                          </form>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><span class="nav-span">Ana səhifə</span></a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><span class="nav-span">Şirkət</span></a>
+                    </li>
+                    
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><span class="nav-span">Xidmətlər</span></a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><span class="nav-span">layihələr </span></a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><span class="nav-span">Xəbərlər </span></a>
+                    </li>
+                
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><span class="nav-span">Bloq</span></a>
+                    </li>
+                    
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><span class="nav-span">Faq </span></a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><span class="nav-span">Əlaqə</span></a>
+                    </li>
+                    <li class="nav-item ml-5 pl-5">
+                        <div class="dropdown drop1 lang1">
+                         <div style="height:33px;">
+                            <button class="btn dropdown-toggle drop2" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="img/az.png"><span>AZ</span>
+                            </button>
+                            <div class="dropdown-menu drop3" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item f" href="/ru/"><img src="img/russia.png"><span>RU</span></a>
+                              <a class="dropdown-item l" href="/en/"><img src="img/uk.png"><span>EN</span></a>
+                            </div>
+                        </div>
+                      </div>  
+                    </li>
+                  </ul>
+                </div>
+            </nav> 
+           
+            <!-- row  -->
   				</div>
-
-
-
-  				<nav class="navbar navbar-expand-lg navbar-dark ">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav m-auto">
-                	<li class="nav-item">
-                  <a class="nav-link" href="#">Ana sehifə</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Haqqımızda</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Xidmətlər</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Layihələr</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Əlaqə</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
 
   			</div>
   		</div>
@@ -156,15 +121,15 @@
       	<div class="overlay"></div>
         
     <!-- play button  -->
-             <div class="container" style="position: relative; width: 100%; height: 100%;" >
+        <div class="container" style="position: relative; width: 100%; height: 100%;" >
           <div class="maincircle">
                <div id="pbCircle" class="progressbar-circle">
                     <div class="secondcircle">
                       <div class="thirdcircle">
                         <img src="img/play.png" alt="">
-                      </div>
-                    </div>  
-               </div>
+                    </div>
+               </div>  
+          </div>
                
         </div>
       </div>
