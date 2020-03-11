@@ -916,6 +916,7 @@ left:0;
   width: 100%;
 }
 footer ul li a:hover{
+    text-decoration: none !important;
   color: black;
   transition: 0,3s ease-in-out;
 }
@@ -933,7 +934,7 @@ footer ul li a{
   position: relative;
   color:#646464;
   padding-left:20px;
-  text-decoration: none;
+   text-decoration: none !important;
   font-size: 14px;
   line-height: 31px;
   transition: 0,3s ease-in-out;
@@ -1018,7 +1019,13 @@ border:solid 1px #BEBEBE
 }
 .social li a svg{transition:500ms all ease}
 .call,.mail{
-  color:#646464
+    text-decoration: none !important;
+  color:#646464;
+  transition:0.3s ease-in-out;
+}
+.call:hover,.mail:hover{
+    color: black;
+    transition:0.3s ease-in-out;
 }
 footer p{margin-bottom:10px}
 .lang-footer {
