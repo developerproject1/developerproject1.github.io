@@ -32,8 +32,8 @@ var bar = new ProgressBar.Circle(pbCircle, {
   text: {
     autoStyleContainer: true
   },
-  from: { color: '#eda44c', width: 1 },
-  to: { color: '#eda44c', width: 1 }, 
+  from: { color: '#d2ab66', width: 1 },
+  to: { color: '#d2ab66', width: 1 }, 
   step: function(state, circle) {
     circle.path.setAttribute('stroke', state.color);
     circle.path.setAttribute('stroke-width', state.width);
