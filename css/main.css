@@ -598,6 +598,7 @@ z-index: 4;
     position: absolute;
     background: #d2ab66;
     bottom: 20px; 
+    font-weight: bold;
     left: 0; 
     color: white;
     padding: 10px 30px;
@@ -606,9 +607,14 @@ z-index: 4;
     font-size: 14px;
     color: white;
     cursor: pointer;
+    transition: 0.3s ease-in-out;
+        box-shadow: rgb(210, 171, 102) -1px 0px 20px 0px;
 }
 
-
+.quotebtn:hover{
+    transition: 0.3s ease-in-out;
+        box-shadow: rgb(210, 171, 102) 0px 9px 49px 2px;
+}
 
 
 
@@ -839,7 +845,7 @@ z-index: 4;
 
 .item .card-body h5{
     font-weight: 600;
-    font-style: ;15px;
+    font-size :14px;
 }
 .item .card-body p{
     font-size: 12px;
@@ -848,7 +854,7 @@ z-index: 4;
     position: absolute;
     top: 10px;
     right: 10px;
-    font-size: 12px;
+    font-size: 10px;
     background: #422a5b;
     padding: 5px 12px;
     border-radius: 2px;
@@ -960,24 +966,28 @@ z-index: 4;
     position: relative;
   }
 
-  /*muradcfadf*/
-   .gallery .img
-   {
-    position: absolute;
-    top: -16%;
-    z-index: -1;
-    left: -10%;
-    opacity: 0.1;
-   }
+    .gallery .img {
+position: absolute;
+top: 2%;
+z-index: -1;
+left: -8%;
+opacity: 0.04;
+}
+ 
+.gallery .img img {
+height: auto;
+width: 45%;
+}
 
-      .gallery .img img{
-        height: auto;
-        width: 985px;
-      }
   .mycrop{
     border-radius: 25px;
     width: 100%;
     overflow: hidden;
+    transition: 0.3s ease-in-out;
+  }
+  .mycrop:hover{
+    opacity: 0.5;
+    transition: 0.3s ease-in-out;
   }
   .mycrop img{
         object-fit: cover;
@@ -1021,16 +1031,17 @@ height: 250px;
  
 .iconbox-wrap-text {
     color: #aaa;
-    font-size: 16px;
+    font-size: 12px;
+    font-weight: 600;
 }
 .iconbox-wrap-content h3{
     color:#d2ab66;
-    font-size: 20px;
+    font-size: 30px;
     margin:0;
 }
 .iconbox-wrap-icon{
     color: #d2ab66;
-    font-size: 50px;
+    font-size: 40px;
     display: table-cell;
     text-align: center;
     vertical-align: middle;
@@ -1043,11 +1054,11 @@ height: 250px;
     width: 70px;
     margin: 0 auto;
     margin-top: -11px;
-    padding-right: 10px
+    padding-right: 0px;
 }
 .iconbox-wrap-content {
     display: table-cell;
-    padding-left: 10px;
+    padding-left: 9px;
     text-align: left;
     vertical-align: middle;
 }
@@ -1070,15 +1081,16 @@ height: 250px;
   height: 100%;
   position: relative;
   z-index: 3;
+  padding: 0;
 }
 .connectinfo .bed{
      position: absolute;
-    top: -47px;
-     width: 360px;
+    top: -40px;
+     width: 350px;
 }
 .connectinfo  .iconbox-wrap{
   position: absolute;
-  top: 80px;
+  top: 95px;
 }
 .contactnumb p{
   font-size: 20px;
@@ -1255,9 +1267,16 @@ border:solid 1px #BEBEBE
   color:#646464;
   transition:0.3s ease-in-out;
 }
+.mail{
+    font-size: 13px;
+}
+
 .call:hover,.mail:hover{
     color: black;
     transition:0.3s ease-in-out;
+}
+.fontss{
+    font-size: 15px !important;
 }
 footer p{margin-bottom:10px}
 .lang-footer {
@@ -1289,6 +1308,9 @@ footer p{margin-bottom:10px}
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.footer-logo img{
+    width: 60px;
 }
 .footer-bottom p{
 color:#B1B1B1;
