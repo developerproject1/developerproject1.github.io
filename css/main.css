@@ -959,6 +959,19 @@ z-index: 4;
     padding-top: 80px;
     position: relative;
   }
+   .gallery .img
+   {
+    position: absolute;
+    top: -16%;
+    z-index: -1;
+    left: -10%;
+    opacity: 0.2;
+   }
+
+      .gallery .img img{
+        height: auto;
+        width: 985px;
+      }
   .mycrop{
     border-radius: 25px;
     width: 100%;
@@ -1277,7 +1290,7 @@ footer p{margin-bottom:10px}
 }
 .footer-bottom p{
 color:#B1B1B1;
-font-size: 15px;
+font-size: 13px;
 }
 .footer-bottom p:last-child{
 color: #d6d4d4;
