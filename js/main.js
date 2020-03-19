@@ -1,6 +1,25 @@
 // function toggleNavBar() {
 //   document.getElementById("sidebar").classList.toggle("active");
 // }
+$(function() {
+  $(".navigation-tab-item").click(function() {
+    $(".navigation-tab-item").removeClass("active");
+    $(this).addClass("active");
+    $(".navigation-tab-overlay").css({
+      left: $(this).prevAll().length * 103 + "px"
+    });
+  });
+});
+
+$("#newstab").click(function () {
+    $("#blog").hide();
+     $("#news").fadeIn();
+});
+
+$("#blogtab").click(function () {
+    $("#news").hide();
+    $("#blog").fadeIn();
+});
 
 $(document).ready(function () {
 
@@ -56,9 +75,9 @@ $(".lang").click(function () {
     autoplay: true,
     margin:10,
     padding:10,
-    dots:true,
-    items:4,	
-    nav:false,
+    dots:false,
+    items:3,	
+    nav:true,
     responsiveClass:true,
     responsive:{
         0:{
