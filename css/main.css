@@ -759,10 +759,7 @@ button, input, optgroup, select, textarea {
     z-index: 0;
     transform: translateY(800px);
 }
-.owl-carousel .owl-stage-outer{
-    max-height: 430px;
-    overflow: hidden;
-}
+
 .item{
   position: relative;
     transition: 0.3s ease-in-out;
@@ -780,6 +777,10 @@ button, input, optgroup, select, textarea {
         transition: 0.3s ease-in-out;
 
 }
+.owl-carousel .owl-stage-outer{
+    max-height: 430px;
+    overflow: hidden;
+}
  .owl-nav {
     display: block ;
     display: flex;
@@ -794,20 +795,19 @@ button, input, optgroup, select, textarea {
     margin-left: 14px;
 }
 .owl-nav .owl-prev span{
-    color: white;
-    font-size: 37px;
+    color: #3d2440;
+    font-size: 47px;
     position: absolute;
-    top: -16px;
-    left: 8px;
+    top: -18px;
+    left: 12px;
 
 }
 .owl-nav .owl-next span{
-    color: white;
-    font-size: 37px;
+    color: #3d2440;
+    font-size: 47px;
     position: absolute;
-    top: -16px;
-    left: 10px;
-
+    top: -18px;
+    left: 15px;
 }
 
 .owl-nav .owl-prev:active , .owl-nav .owl-prev:focus   ,  .owl-nav .owl-next:active ,.owl-nav .owl-next:focus  {
@@ -817,14 +817,23 @@ button, input, optgroup, select, textarea {
 
 
  .owl-nav .owl-prev ,  .owl-nav .owl-next {
-    height: 30px !important;
-    width: 30px !important;
+    height: 45px !important;
+    width: 45px !important;
     display: flex !important;
+    border: 2px solid #3d2440 !important;
     justify-content: center !important;
     align-items: center !important;
     position: relative !important;
     border-radius: 50% !important;
-    background:#3d2440 !important;
+    background:#f5f5f5 !important;
+    transition: 0.3s ease-in-out;
+}
+.owl-nav .owl-prev:hover ,  .owl-nav .owl-next:hover{
+     background:#3d2440 !important;
+     transition: 0.3s ease-in-out;
+}
+.owl-nav .owl-next:hover  span , .owl-nav .owl-prev:hover span{
+    color: #f5f5f5 !important;
 }
 
 .item .card-body h5{
