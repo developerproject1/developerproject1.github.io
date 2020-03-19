@@ -849,7 +849,7 @@ button, input, optgroup, select, textarea {
     right: 10px;
     font-size: 12px;
     background: red;
-    padding: 5px 5px;
+    padding: 5px 12px;
     border-radius: 2px;
     color: white;
     font-weight: bold;
@@ -921,6 +921,9 @@ button, input, optgroup, select, textarea {
 
 .news{
   background: #e9e9e9;
+}
+.card-text{
+    font-size: 14px;
 }
 .cardimg{
     position: relative;
