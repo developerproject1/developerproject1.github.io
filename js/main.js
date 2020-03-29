@@ -94,5 +94,25 @@ $(".lang").click(function () {
 
 // documenr ready 
 
+
+function scrolling(){ 
+         if ($(window).scrollTop()>30){
+            // $("fixedcontainer").removeClass("" );
+            $("#fixedcontainer").addClass("fixednav");
+              // $(".info").addClass("d-none");
+              $("#searching").attr('src', 'img/search22.png');
+
+         }
+          if ($(window).scrollTop()<30){
+                  $("#fixedcontainer").removeClass("fixednav" );
+                          // $(".info").removeClass("d-none");
+                  $("#searching").attr('src', 'img/search.png');
+         }
+      
+     }
+        $(window).scroll(function(){
+            scrolling();
+        });
+
 });
 
