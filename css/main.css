@@ -751,6 +751,7 @@ z-index: 4;
 
 .product{
     margin-top: 25px;
+    overflow: hidden;
     margin-bottom:60px;
 }
 /*tabs*/
