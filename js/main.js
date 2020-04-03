@@ -173,7 +173,7 @@ $( "#iplik" ).hover(
 
 $( "#foto" ).hover(
   function() {
-     $("#gallery1 .imgdrop img").attr("src","img/foto.jpg");
+     $("#gallery1 .imgdrop img").attr("src","img/newimg.jpg");
   });
 
 $( "#video" ).hover(
