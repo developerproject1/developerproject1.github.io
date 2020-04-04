@@ -539,10 +539,7 @@ button, input, optgroup, select, textarea {
      background: white;
          box-shadow: 0 0 30px 0 rgba(0,0,0,.12);
 }
-.fixednav .mynav{
-    background: white;
-    transition: .3s ease-in-out;
-}
+
 .navbar-nav li .nav-span{
   color: white;
   font-weight: 600;
@@ -1564,7 +1561,10 @@ color: #d6d4d4;
 
 }
 @media screen and (max-width: 991px) {
-
+.fixednav .mynav{
+    background: white;
+    transition: .3s ease-in-out;
+}
 .mynav{
     position: absolute;
     top: 0;
