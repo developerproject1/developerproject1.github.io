@@ -222,14 +222,17 @@ body{
 }
 /*header*/
 
-
+.navbar{
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
 .logoimage{
     display: flex;
     justify-content: center;
     background: white;
    border-bottom-left-radius: 20px;
    border-bottom-right-radius: 20px;
-   padding:0  8px;
+   padding:0 25px;
 }
 .logoimage img{
     height: auto;
@@ -254,6 +257,10 @@ body{
 .fixednav .search input{
     border: 1px solid black;
 }
+/*.fixednav .logoimage{
+    justify-content: right;
+    transition: 0.3s ease-in-out
+}*/
 .search input{
     position: absolute;
     top: 0;
@@ -469,7 +476,7 @@ button, input, optgroup, select, textarea {
     display:block !important;
     transition:0.4s ease-in-out;
 }
-.newdropdown:hover .navbar-nav__item-triangle:after{
+.newdropdown:hover .navbar-nav__item-triangle:after{    
     display: block;
     transition:0.4s ease-in-out;
 }
@@ -477,7 +484,7 @@ button, input, optgroup, select, textarea {
 .newdropdown{
     border-top: 2px solid #d2ab66;
     height: auto;
-    width: 80%;
+    width: 68%;
     background: white;
     position: absolute;
     right: 0;   
@@ -532,8 +539,10 @@ button, input, optgroup, select, textarea {
      background: white;
          box-shadow: 0 0 30px 0 rgba(0,0,0,.12);
 }
-
-
+.fixednav .mynav{
+    background: white;
+    transition: .3s ease-in-out;
+}
 .navbar-nav li .nav-span{
   color: white;
   font-weight: 600;
@@ -570,7 +579,7 @@ button, input, optgroup, select, textarea {
     position: relative;
 }
 .carousel-item img{
-    max-height: 700px;
+    height: 700px;
     object-fit: cover;
 }
 .carousel-caption{
@@ -1514,30 +1523,87 @@ color: #d6d4d4;
 /*footer */
 /*medias*/
 
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1325px) {
   .carousel-caption{
-    bottom :250px !important;
+    bottom: 250px !important;
   }
   .maincircle{
       top: 170px; 
+      right: 39px !important;
   }
 
 }
-@media screen and (max-width: 1220px) {
-/*      .carousel-caption{
-    bottom :650px !important;
+@media screen and (max-width: 1325px) {
+     .carousel-caption{
+    bottom: 250px !important;
+  }
+  .maincircle{
+      top: 170px; 
+      right: 39px !important;
+  }
 }
-.maincircle{
-    top: 420px; 
-}*/
-
+@media screen and (max-width: 1240px) {
+       .maincircle{
+      right: 59px !important;
+  }
 }
 
 @media screen and (max-width: 1199px) {
+     .maincircle{
+      right: 69px !important;
+      top: 148px;
+  }
+
+.carousel-control-prev{
+   right: 90px !important;
+   left: auto !important;
+}
+.carousel-control-next{
+    right: 22px;
+}
 
 }
 @media screen and (max-width: 991px) {
 
+.mynav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+    .carousel-item img{
+    height: 600px;
+    object-fit: cover;
+    }
+    .carousel-caption h1:nth-child(1) {
+        font-size: 35px !important;
+    }
+    .carousel-caption h1:nth-child(2) {
+        font-size: 28px !important;
+    }
+    .slidertext .carousel-caption p{
+        margin-top: 0px !important;
+    }
+    .slidertext .carousel-caption button {
+        margin-top: 10px !important;
+    }
+    .progressbar-circle{
+        height: 220px;
+        width: 220px;
+    }
+    .progressbar-circle img{
+        height: 100px;
+    }
+    .maincircle {
+    right: 0px !important;
+    top: 148px;
+    }
+    .carousel-caption {
+    bottom: 210px !important;
+    }
+    .carousel-indicators li {
+     width: 210px;
+    }
 }
 @media screen and (max-width: 767px) {
 

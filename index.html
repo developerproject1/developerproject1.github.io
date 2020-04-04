@@ -24,179 +24,169 @@
   	<div class="row">
   		<div class="col-md-12">
   			<div class="container">
-  				<div class="row">
-  					<div class="col-md-2">
-  						<a href="/" class="logoimage">
-  							<img src="img/logo22.png">
-  						</a>
-  					</div>
-  					<!-- <div class="col-md-2 text-white">
-  						<div class="phonenumber">
-  							<img src="img/phone.png"><a href=""  class="nav-link  text-white d-inline">(+99450)04982082</a>
-  						</div>
-  					</div> -->
-  					
+            <div class="mynav">
+              <nav class=" navbar navbar-expand-lg navbar-dark ">          
+                  <a href="/" class="navbar-brand logoimage">
+                    <img src="img/logo22.png">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                      <li class="mr-4 pr-5 nav-item">
+                          <div class="search">
+                            <form action="">
+                            <input class="font" placeholder="Axtar.." type="search">
+                            <!-- <button class="searchbtn" type="submit"></button> -->
+                            <img src="img/search.png" class="fa" id="searching" height="100%" width="100%">
+                            </form>
+                          </div>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#"><span class="nav-span">Baş səhifə</span></a>
+                      </li>
+
+                      <li class="nav-item  mr-6 newnav mydropdown">
+                                <a class="nav-link nav-link-drop text-white" id="dropdownMenuLink" aria-haspopup="true" href="/services/" aria-expanded="false"><span class="nav-span">Şirkət</span>
+                                </a>
+                                
+                                  <!-- yeni dropdown -->
+                                <div class="navbar-nav__item-triangle no1"></div>
+                                <div id="sirket" class="newdropdown container-fluid">
+                                  <div class="row m-0">
+                                    <div class="col-md-6 droplinks">
+                                     <a  id="haqqında" class="dropdown-item" href="/hairdress/">Haqqımızda</a>
+                                      <a id="zavod"  class="dropdown-item" href="/lazer/">Zavod və fabriklər</a>
+                                       <a id="satis"  class="dropdown-item" href="/lazer/">Satış mərkəzi</a>
+                                      <a id="vakansiya"  class="dropdown-item" href="/kosm/">Vakansiyalar</a>
+                                      <a id="sertfikat"  class="dropdown-item" href="/masaj/">Sertifikatlar</a>
+                                      <a id="referanslar"  class="dropdown-item" href="/makyaj/">Tövsiyyə məktubları (referanslar)</a>
+                                    </div>
+                                    <div class="col-md-6 imgdrop">
+                                        <img height="100%" width="100%" src="img/imgdrop.jpg">
+                                    </div>
+                                  </div>
+                                </div> 
+
+                                  <!-- kohne dropdown -->
+                                <!-- <div class="navbar-nav__item-triangle"></div>
+                                <div class="dropdown show dropservice">
+                                  <div class="dropdown-menu blockdrop" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item" href="/hairdress/">Haqqımızda</a>
+                                    <a class="dropdown-item" href="/lazer/">Zavod və fabriklər</a>
+                                     <a class="dropdown-item" href="/lazer/">Satış mərkəzi</a>
+                                    <a class="dropdown-item" href="/kosm/">Vakansiyalar</a>
+                                    <a class="dropdown-item" href="/masaj/">Sertifikatlar</a>
+                                    <a class="dropdown-item" href="/makyaj/">Tövsiyyə məktubları (referanslar)</a>
+                                  </div>
+                                </div> -->
+                       </li>
             
-
-            <nav class="col-md-10 navbar navbar-expand-lg navbar-dark ">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav ml-auto">
-                    <li class="mr-4 pr-5 nav-item">
-                        <div class="search">
-                          <form action="">
-                          <input class="font" placeholder="Axtar.." type="search">
-                          <!-- <button class="searchbtn" type="submit"></button> -->
-                          <img src="img/search.png" class="fa" id="searching" height="100%" width="100%">
-                          </form>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#"><span class="nav-span">Baş səhifə</span></a>
-                    </li>
-
-                    <li class="nav-item  mr-6 newnav mydropdown">
-                              <a class="nav-link nav-link-drop text-white" id="dropdownMenuLink" aria-haspopup="true" href="/services/" aria-expanded="false"><span class="nav-span">Şirkət</span>
-                              </a>
-                              
-                                <!-- yeni dropdown -->
-                              <div class="navbar-nav__item-triangle no1"></div>
-                              <div id="sirket" class="newdropdown container-fluid">
-                                <div class="row m-0">
-                                  <div class="col-md-6 droplinks">
-                                   <a  id="haqqında" class="dropdown-item" href="/hairdress/">Haqqımızda</a>
-                                    <a id="zavod"  class="dropdown-item" href="/lazer/">Zavod və fabriklər</a>
-                                     <a id="satis"  class="dropdown-item" href="/lazer/">Satış mərkəzi</a>
-                                    <a id="vakansiya"  class="dropdown-item" href="/kosm/">Vakansiyalar</a>
-                                    <a id="sertfikat"  class="dropdown-item" href="/masaj/">Sertifikatlar</a>
-                                    <a id="referanslar"  class="dropdown-item" href="/makyaj/">Tövsiyyə məktubları (referanslar)</a>
-                                  </div>
-                                  <div class="col-md-6 imgdrop">
-                                      <img height="100%" width="100%" src="img/imgdrop.jpg">
+                      
+                      
+                      <li class="nav-item  mr-6 newnav mydropdown">
+                                <a class="nav-link nav-link-drop text-white" id="dropdownMenuLink" aria-haspopup="true" href="/services/" aria-expanded="false"><span class="nav-span">Məhsullar</span>
+                                </a>
+                                
+                                   <!-- yeni dropdown -->
+                                <div class="navbar-nav__item-triangle no2"></div>
+                                <div id="mehsul" class="newdropdown container-fluid">
+                                  <div class="row m-0">
+                                    <div class="col-md-6 droplinks">
+                                      <a id="yataq" class="dropdown-item" href="/hairdress/"> Yataq dəstləri</a>
+                                      <a  id="uniforma" class="dropdown-item" href="/lazer/">Uniforma</a>
+                                       <a  id="desmal" class="dropdown-item" href="/lazer/">Dəsmallar</a>
+                                      <a id="iplik" class="dropdown-item" href="/kosm/">İplik istehsalı</a>
+                                    </div>
+                                    <div class="col-md-6 imgdrop">
+                                        <img  height="100%" width="100%" src="img/imgdrop.jpg">
+                                    </div>
                                   </div>
                                 </div>
-                              </div> 
 
-                                <!-- kohne dropdown -->
-                              <!-- <div class="navbar-nav__item-triangle"></div>
-                              <div class="dropdown show dropservice">
-                                <div class="dropdown-menu blockdrop" aria-labelledby="dropdownMenuLink">
-                                  <a class="dropdown-item" href="/hairdress/">Haqqımızda</a>
-                                  <a class="dropdown-item" href="/lazer/">Zavod və fabriklər</a>
-                                   <a class="dropdown-item" href="/lazer/">Satış mərkəzi</a>
-                                  <a class="dropdown-item" href="/kosm/">Vakansiyalar</a>
-                                  <a class="dropdown-item" href="/masaj/">Sertifikatlar</a>
-                                  <a class="dropdown-item" href="/makyaj/">Tövsiyyə məktubları (referanslar)</a>
-                                </div>
-                              </div> -->
-                     </li>
-          
-                    
-                    
-                    <li class="nav-item  mr-6 newnav mydropdown">
-                              <a class="nav-link nav-link-drop text-white" id="dropdownMenuLink" aria-haspopup="true" href="/services/" aria-expanded="false"><span class="nav-span">Məhsullar</span>
-                              </a>
-                              
-                                 <!-- yeni dropdown -->
-                              <div class="navbar-nav__item-triangle no2"></div>
-                              <div id="mehsul" class="newdropdown container-fluid">
-                                <div class="row m-0">
-                                  <div class="col-md-6 droplinks">
-                                    <a id="yataq" class="dropdown-item" href="/hairdress/"> Yataq dəstləri</a>
-                                    <a  id="uniforma" class="dropdown-item" href="/lazer/">Uniforma</a>
-                                     <a  id="desmal" class="dropdown-item" href="/lazer/">Dəsmallar</a>
-                                    <a id="iplik" class="dropdown-item" href="/kosm/">İplik istehsalı</a>
+
+
+                                <!-- <div class="navbar-nav__item-triangle"></div>
+                                <div class="dropdown show dropservice">
+                                  <div class="dropdown-menu blockdrop" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item" href="/hairdress/"> Yataq dəstləri</a>
+                                    <a class="dropdown-item" href="/lazer/">Uniforma</a>
+                                     <a class="dropdown-item" href="/lazer/">Dəsmallar</a>
+                                    <a class="dropdown-item" href="/kosm/">İplik istehsalı</a>
                                   </div>
-                                  <div class="col-md-6 imgdrop">
-                                      <img  height="100%" width="100%" src="img/imgdrop.jpg">
+                                </div> -->
+                       </li>
+
+                      <li class="nav-item">
+                        <a class="nav-link" href="#"><span class="nav-span">Xəbərlər </span></a>
+                      </li>
+
+                      <li class="nav-item">
+                        <a class="nav-link" href="#"><span class="nav-span">FAQ </span></a>
+                      </li>
+                  
+                      
+                      <li class="nav-item  mr-6 newnav mydropdown">
+                                <a class="nav-link nav-link-drop text-white" id="dropdownMenuLink" aria-haspopup="true" href="#" aria-expanded="false"><span class="nav-span" >Qalereya</span>
+                                </a>
+                                
+                                 <div class="navbar-nav__item-triangle no3"></div>
+                                <div id="gallery1" class="newdropdown container-fluid">
+                                  <div class="row m-0">
+                                    <div class="col-md-6 imgdrop">
+                                        <img height="100%" width="100%" src="img/imgdrop.jpg">
+                                    </div>
+                                    <div class="col-md-6 droplinks">
+                                         <a id="foto" class="dropdown-item" href="/hairdress/">Foto qalereya</a>
+                                         <a id="video" class="dropdown-item" href="/lazer/">Video qalereya</a>
+                                    </div>
                                   </div>
                                 </div>
+
+                              <!--   <div class="navbar-nav__item-triangle"></div>
+                                <div class="dropdown show dropservice">
+                                  <div class="dropdown-menu blockdrop" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item" href="/hairdress/">Foto qalereya</a>
+                                    <a class="dropdown-item" href="/lazer/">Video qalereya</a>
+                                  </div>
+                                </div> -->
+                       </li>
+                      
+                      <li class="nav-item">
+                        <a class="nav-link" href="#"><span class="nav-span">Bloq </span></a>
+                      </li>
+
+                      <li class="nav-item">
+                        <a class="nav-link" href="#"><span class="nav-span">Əlaqə</span></a>
+                      </li>
+                      <li class="nav-item ml-3 pl-3">
+                          <div class="dropdown drop1 lang1 ">
+                           <div style="height:33px;">
+                              <button class="btn dropdown-toggle drop2" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <img src="img/az.png"><span class="font">AZ</span>
+                              </button>
+                              <div class="dropdown-menu drop3" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item f" href="/ru/"><img src="img/russia.png"><span class="font">RU</span></a>
+                                <a class="dropdown-item l" href="/en/"><img src="img/uk.png"><span class="font">EN</span></a>
                               </div>
+                          </div>
+                        </div>  
+                      </li>
+                    </ul>
+                  </div>
+              </nav> 
 
-
-
-                              <!-- <div class="navbar-nav__item-triangle"></div>
-                              <div class="dropdown show dropservice">
-                                <div class="dropdown-menu blockdrop" aria-labelledby="dropdownMenuLink">
-                                  <a class="dropdown-item" href="/hairdress/"> Yataq dəstləri</a>
-                                  <a class="dropdown-item" href="/lazer/">Uniforma</a>
-                                   <a class="dropdown-item" href="/lazer/">Dəsmallar</a>
-                                  <a class="dropdown-item" href="/kosm/">İplik istehsalı</a>
-                                </div>
-                              </div> -->
-                     </li>
-
-                    <li class="nav-item">
-                      <a class="nav-link" href="#"><span class="nav-span">Xəbərlər </span></a>
-                    </li>
-
-                    <li class="nav-item">
-                      <a class="nav-link" href="#"><span class="nav-span">FAQ </span></a>
-                    </li>
-                
-                    
-                    <li class="nav-item  mr-6 newnav mydropdown">
-                              <a class="nav-link nav-link-drop text-white" id="dropdownMenuLink" aria-haspopup="true" href="#" aria-expanded="false"><span class="nav-span" >Qalereya</span>
-                              </a>
-                              
-                               <div class="navbar-nav__item-triangle no3"></div>
-                              <div id="gallery1" class="newdropdown container-fluid">
-                                <div class="row m-0">
-                                  <div class="col-md-6 imgdrop">
-                                      <img height="100%" width="100%" src="img/imgdrop.jpg">
-                                  </div>
-                                  <div class="col-md-6 droplinks">
-                                       <a id="foto" class="dropdown-item" href="/hairdress/">Foto qalereya</a>
-                                       <a id="video" class="dropdown-item" href="/lazer/">Video qalereya</a>
-                                  </div>
-                                </div>
-                              </div>
-
-                            <!--   <div class="navbar-nav__item-triangle"></div>
-                              <div class="dropdown show dropservice">
-                                <div class="dropdown-menu blockdrop" aria-labelledby="dropdownMenuLink">
-                                  <a class="dropdown-item" href="/hairdress/">Foto qalereya</a>
-                                  <a class="dropdown-item" href="/lazer/">Video qalereya</a>
-                                </div>
-                              </div> -->
-                     </li>
-                    
-                    <li class="nav-item">
-                      <a class="nav-link" href="#"><span class="nav-span">Bloq </span></a>
-                    </li>
-
-                    <li class="nav-item">
-                      <a class="nav-link" href="#"><span class="nav-span">Əlaqə</span></a>
-                    </li>
-                    <li class="nav-item ml-3 pl-3">
-                        <div class="dropdown drop1 lang1 ">
-                         <div style="height:33px;">
-                            <button class="btn dropdown-toggle drop2" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img src="img/az.png"><span class="font">AZ</span>
-                            </button>
-                            <div class="dropdown-menu drop3" aria-labelledby="dropdownMenuButton">
-                              <a class="dropdown-item f" href="/ru/"><img src="img/russia.png"><span class="font">RU</span></a>
-                              <a class="dropdown-item l" href="/en/"><img src="img/uk.png"><span class="font">EN</span></a>
-                            </div>
-                        </div>
-                      </div>  
-                    </li>
-                  </ul>
-                </div>
-            </nav> 
-           
-           <!-- <div class="col-md-3">
-              <button class="btn button btn-warning text-white">Online mağaza</button>
-            </div> -->
-            <!-- row  -->
-  				</div>
-
-  			</div>
+              <!-- mynav -->
+            </div> 
+            <!-- contaoner -->
+        </div>  
+  			<!-- col-md-12 -->
   		</div>
+      <!-- row -->
   	</div>
+    <!-- container fluud -->
   </div>
 
 
@@ -225,7 +215,7 @@
       <div class="carousel-item active">
         <img src="img/fabrik1.jpg" class="d-block w-100" alt="...">  
         <div class="container ">
-            <div class="col-md-12 slidertext">
+            <div class="col-lg-12 col-md-9 slidertext">
                 <div class="carousel-caption  animated bounceInRight">
                     <h1 class="text-left">GİLTEX</h1>
                     <h1 class="text-left textslder font-weight-bold">EVİNİZƏ DAHA YAXIN</h1>
@@ -242,7 +232,7 @@
       <div class="carousel-item ">
         <img src="img/fabrik2.jpg" class="d-block w-100" alt="...">  
         <div class="container ">
-            <div class="col-md-12 slidertext">
+            <div class="col-lg-12 col-md-9 slidertext">
                 <div class="carousel-caption  animated bounceInRight">
                     <h1 class="text-left">GİLTEX</h1>
                     <h1 class="text-left textslder">EVİNİZƏ DAHA YAXIN</h1>
@@ -259,7 +249,7 @@
       <div class="carousel-item">
         <img src="img/fabrik3.jpg" class="d-block w-100" alt="...">  
         <div class="container ">
-            <div class="col-md-12 slidertext">
+            <div class="col-lg-12 col-md-9 slidertext">
                 <div class="carousel-caption  animated bounceInRight">
                     <h1 class="text-left">GİLTEX</h1>
                     <h1 class="text-left textslder">EVİNİZƏ DAHA YAXIN</h1>
