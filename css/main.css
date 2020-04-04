@@ -463,13 +463,13 @@ button, input, optgroup, select, textarea {
 }
 
 .no1:after{
-    left: 39%;
+    left: 48%;
 }
 .no2:after{
-    left: 47% !important;
+    left: 55% !important;
 }
 .no3:after{
-    left: 70% !important;
+    left: 75% !important;
 }
 
 .mydropdown:hover .newdropdown{
