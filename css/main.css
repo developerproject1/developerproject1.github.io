@@ -1688,6 +1688,10 @@ color: #d6d4d4;
         box-shadow: none;
         border: 1px solid #d2ab66;
      }
+     .no1:after ,  .no2:after ,  .no3:after{
+        left: 48%;
+    }
+
      .droplinks{
         text-align: center;
      }
