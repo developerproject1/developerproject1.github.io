@@ -116,7 +116,6 @@ function scrolling(){
 
 
 
-
 $( "#haqqında" ).hover(
   function() {
      $("#sirket .imgdrop img").attr("src","img/giltexabout.jpg");
