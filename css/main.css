@@ -1759,8 +1759,24 @@ color: #d6d4d4;
         font-size: 113px !important;
         transform: translateY(829px);
     }
+    /*gallery*/
+    .gallery {
+    padding-bottom: 100px;}
+
+    .text h3 {
+    transform: translateY(546px);
+    font-size: 113px !important;
+    }
+
+    /*connections*/
+    .connectinfo .bed{
+        display: none;
+    }
 }
 @media screen and (max-width: 767px) {
+    .mt-6{
+            margin-top: 1.5rem !important;
+    }
     .maincircle{
         display: none;
     }
@@ -1796,6 +1812,22 @@ color: #d6d4d4;
        font-size: 87px !important;
          transform: translateY(743px);
     }
+    /*galereya*/
+    .text h3 {
+    transform: translateY(1045px);
+    font-size: 87px !important;}
+
+    .newcrop img{
+        height: 167px;
+    }
+    /*connections*/
+    .connectinfo .iconbox-wrap {
+    position: relative;
+    top: 66px;
+    margin-bottom: 17px;
+    right: -41px;
+    width: 80%;
+    }
 }
 @media screen and (max-width: 505px){
 
@@ -1812,11 +1844,42 @@ color: #d6d4d4;
     .text{
         display: none;
      }
+     .gallery {
+    padding-bottom: 30px;
+        padding-top: 30px;
+    }
+    /*.connections*/
+    .connections {
+    height: 423px !important;
+    }
+    .connectinfo .iconbox-wrap {
+     right: unset; 
+    width: 40%;
+    }
+    .connectinfo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 @media screen and (max-width: 440px) {
-
+    .gallery .col-6{
+        padding: 0 8px !important;
+    }
+    .mt-6{
+        margin-top: 16px !important;
+    }
+    .newcrop img {
+    height: 144px;
+    }
+    .connectinfo .iconbox-wrap {
+      width: 50%;
+    }
 }
 @media screen and (max-width: 392px) {
+    .newcrop img {
+    height: 120px;
+    }
     .drop1 {
     right: 82px;}
     .carousel-control-prev img,  .carousel-control-next img{
@@ -1828,16 +1891,18 @@ color: #d6d4d4;
     .carousel-control-next{
          right: 30px;
     }
+
+    .connectinfo .iconbox-wrap {
+      width: 60%;
+    }
+}
+
+@media screen and (max-width: 342px) {
+    .newcrop img {
+    height: 111px;
+    }
 }
 
 
 
 
-
-
-/*display none*/
-
-/*.connections , footer{
-    display: none;
-}
-*/
