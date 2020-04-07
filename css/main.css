@@ -268,7 +268,7 @@ nav .navbar-toggler span:nth-child(3) {
     transition: 0.3s ease-in-out;
 }
 .logoimage img{
-    height: auto;
+    height: 100%;
     width: 100px;
 }
 
