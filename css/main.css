@@ -1864,7 +1864,7 @@ color: #d6d4d4;
     .carousel-indicators li {
         width: 160px;
           height: 35px;
-         border-radius: 13px;
+         border-radius: 5px;
     }
     .carousel-indicators li img{
         height: 60px;
