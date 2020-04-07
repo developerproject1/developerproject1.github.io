@@ -6,7 +6,7 @@ $(function() {
     $(".navigation-tab-item").removeClass("active");
     $(this).addClass("active");
     $(".navigation-tab-overlay").css({
-      left: $(this).prevAll().length * 103 + "px"
+      left: $(this).prevAll().length * 160 + "px"
     });
   });
 });
