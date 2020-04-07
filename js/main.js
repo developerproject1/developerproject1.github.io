@@ -116,75 +116,75 @@ function scrolling(){
 
 
 
-$( "#haqqında" ).hover(
-  function() {
-     $("#sirket .imgdrop img").attr("src","img/giltexabout.jpg");
-  });
+// $( "#haqqında" ).hover(
+//   function() {
+//      $("#sirket .imgdrop img").attr("src","img/giltexabout.jpg");
+//   });
 
-$( "#vakansiya" ).hover(
-  function() {
-     $("#sirket .imgdrop img").attr("src","img/vakansiya.jpg");
-  });
-
-
-$( "#sertfikat" ).hover(
-  function() {
-     $("#sirket .imgdrop img").attr("src","img/sertifikat.jpg");
-  });
-
-$( "#zavod" ).hover(
-  function() {
-     $("#sirket .imgdrop img").attr("src","img/fabrik1.jpg");
-  });
-
-$( "#satis" ).hover(
-  function() {
-     $("#sirket .imgdrop img").attr("src","img/satis.jpg");
-  });
-$( "#referanslar" ).hover(
-  function() {
-     $("#sirket .imgdrop img").attr("src","img/referans.jpg");
-  });
+// $( "#vakansiya" ).hover(
+//   function() {
+//      $("#sirket .imgdrop img").attr("src","img/vakansiya.jpg");
+//   });
 
 
+// $( "#sertfikat" ).hover(
+//   function() {
+//      $("#sirket .imgdrop img").attr("src","img/sertifikat.jpg");
+//   });
+
+// $( "#zavod" ).hover(
+//   function() {
+//      $("#sirket .imgdrop img").attr("src","img/fabrik1.jpg");
+//   });
+
+// $( "#satis" ).hover(
+//   function() {
+//      $("#sirket .imgdrop img").attr("src","img/satis.jpg");
+//   });
+// $( "#referanslar" ).hover(
+//   function() {
+//      $("#sirket .imgdrop img").attr("src","img/referans.jpg");
+//   });
 
 
-$( "#yataq" ).hover(
-  function() {
-     $("#mehsul .imgdrop img").attr("src","img/yataq.jpg");
-  });
-
-$( "#uniforma" ).hover(
-  function() {
-     $("#mehsul .imgdrop img").attr("src","img/uniforma.jpg");
-  });
-
-$( "#desmal" ).hover(
-  function() {
-     $("#mehsul .imgdrop img").attr("src","img/desmal.jpg");
-  });
-
-$( "#iplik" ).hover(
-  function() {
-     $("#mehsul .imgdrop img").attr("src","img/iplik.jpg");
-  });
 
 
-$( "#foto" ).hover(
-  function() {
-     $("#gallery1 .imgdrop img").attr("src","img/newimg.jpg");
-  });
+// $( "#yataq" ).hover(
+//   function() {
+//      $("#mehsul .imgdrop img").attr("src","img/yataq.jpg");
+//   });
 
-$( "#video" ).hover(
-  function() {
-     $("#gallery1 .imgdrop img").attr("src","img/video.jpg");
-  });
+// $( "#uniforma" ).hover(
+//   function() {
+//      $("#mehsul .imgdrop img").attr("src","img/uniforma.jpg");
+//   });
+
+// $( "#desmal" ).hover(
+//   function() {
+//      $("#mehsul .imgdrop img").attr("src","img/desmal.jpg");
+//   });
+
+// $( "#iplik" ).hover(
+//   function() {
+//      $("#mehsul .imgdrop img").attr("src","img/iplik.jpg");
+//   });
+
+
+// $( "#foto" ).hover(
+//   function() {
+//      $("#gallery1 .imgdrop img").attr("src","img/newimg.jpg");
+//   });
+
+// $( "#video" ).hover(
+//   function() {
+//      $("#gallery1 .imgdrop img").attr("src","img/video.jpg");
+//   });
  
 
-$( ".newdropdown .dropdown-item" ).mouseout(
-  function() {
-     $(".newdropdown .imgdrop img").attr("src","img/imgdrop.jpg");
-   }); 
+// $( ".newdropdown .dropdown-item" ).mouseout(
+//   function() {
+//      $(".newdropdown .imgdrop img").attr("src","img/imgdrop.jpg");
+//    }); 
 
 
 
