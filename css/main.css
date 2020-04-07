@@ -580,11 +580,11 @@ button, input, optgroup, select, textarea {
 .newnav .dropdown-item.active,  .newnav .dropdown-item:active {
     color: #fff;
     text-decoration: none !important;
-    background-color: #d2ab66 !important;
+    background-color: #fcfcfc !important;
 }
 .newnav .dropdown-item:focus, .newnav .dropdown-item:hover {
-    background-color: #d2ab66 !important;
-    color: white !important;
+    background-color: #fcfcfc !important;
+    /*color: white !important;*/
 }
 .block{
     display:block;
@@ -1049,7 +1049,7 @@ z-index: 4;
   transform: translate(0px, -10px);
 }
 .navigation-tab-item.active .navigation-tab__txt {
-    color: #c0b26b;
+    color: #ffffff;;
 }
 /*.navigation-tab-overlay {
   border-radius: 5px;
@@ -1077,8 +1077,8 @@ z-index: 4;
     background-color: white;
     border-radius: 40px;
     overflow: hidden;
-    border: 2px solid #f5f5f5;
     display: flex;
+    border: 2px solid #e3e3e3;
     position: relative;
     flex-shrink: 0;
 }
@@ -1093,6 +1093,7 @@ z-index: 4;
     top: 0;
     transition: 0.3s;
 }
+
 
 
 .navigation-tab-item {
