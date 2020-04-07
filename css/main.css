@@ -287,7 +287,7 @@ nav .navbar-toggler span:nth-child(3) {
   background: transparent; border: none;
 }
 .fixednav .search input{
-    border: 1px solid black;
+    border: 1px solid #e7e7e7;
 }
 /*.fixednav .logoimage{
     justify-content: right;
@@ -334,8 +334,13 @@ nav .navbar-toggler span:nth-child(3) {
     display: block;
 }
 
-.fixednav .search  .fa{
+/*.fixednav .search  .fa{
     border: 1px solid #4b3441;
+    background: white;
+    color: white;
+}*/
+.fixednav .search .fa {
+    border: 1px solid #e7e7e7;
     background: white;
     color: white;
 }
