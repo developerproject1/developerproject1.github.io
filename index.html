@@ -118,10 +118,18 @@ width: 22px;
   
 .newmodal{
   height: 100%;
+  text-align: justify;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.newmodal .modal-header .close {
+    margin-top: 0px !important;
+    position: absolute;
+    top: 16px;
+    right: 18px;
 }
 @media (max-width: 768px){
   .arxafon .container{
@@ -185,7 +193,7 @@ width: 22px;
   <div class="newmodal">
         <div class="modal-dialog" role="document">
         <div class="modal-content">
-          <div class="modal-header">
+          <div class="modal-header position-relative">
             <h3 class="modal-title text-center"  id="exampleModalLabel">Qaydalar</h3>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
