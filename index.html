@@ -65,12 +65,15 @@ text-align: center;
 label {
     display: block;
 }
-input {
+input , select{
     width: 100%;
     padding: 15px 31px;
     border-radius: 3px;
     border: 2px solid #f2f2f5;
         margin-bottom: 30px;
+}
+option {
+    padding: 15px 31px;
 }
 a {
     color: #8b8b8b;
@@ -91,30 +94,41 @@ width: 22px;
 <div class="arxafon">
     <div class="container">
         <div class="row">
-            <div class="col-md-5 col-md-offset-4 pencere">
-                <div class="yuxari">
-                    Onlayn ödəmə
-                </div>
-                <div class="merkez">
-                    <label>Xidməti seçin</label>
-                    <input type="text" name="xidmet" class="xana"/>
-                    <label>Məbləği daxil edin (AZN)</label>
-                    <input type="text" name="mebleg" class="xana"/>
-                    <label>Əlaqə nömrəniz</label>
-                    <input type="text" name="nomre" class="xana"/>
-                    <label><a href="#qaydalar">Ödəmə sözləşməsi</a>ni oxudum və razıyam</label>
-                    <input type="checkbox" checked name="" class="xana"/>
-                </div>
-                <input type="submit" name="submit" value="ÖDƏNİŞ ET" class="odeniset"/>
-            </div>
+            <form method="POST">
+              <div class="col-md-5 col-md-offset-4 pencere">
+                  <div class="yuxari">
+                      Onlayn ödəmə
+                  </div>
+                  <div class="merkez">
+                      <label>Xidməti seçin</label>
+                      <select>
+                        <option>Korporativ Mail</option>
+                        <option>Hostinq</option>
+                        <option>Domain</option>
+                        <option>Texniki dəstək</option>
+                        <option>Saytın hazırlanması</option>
+                        <option>Digər</option>
+                      </select>
+                      <label>Məbləği daxil edin (AZN)</label>
+                      <input type="number" required="" name="mebleg" class="xana"/>
+                      <label>Əlaqə nömrəniz</label>
+                      <input type="number" value="994"   required="" name="nomre" class="xana elaqe"/>
+                      <label><a href="#qaydalar">Ödəmə sözləşməsi</a>ni oxudum və razıyam</label>
+                      <input type="checkbox" checked name="" class="xana"/>
+                  </div>
+                  <input type="submit" name="submit" value="ÖDƏNİŞ ET" class="odeniset"/>
+              </div>
+            </form>
             <div class="col-md-5 col-md-offset-4 geri">
-                <a href="/"><img src="/img/geri.png"> Ana səhifəyə qayıt</a>
+                <a href="/"><img src="https://okmedia.az/img/geri.png"> Ana səhifəyə qayıt</a>
             </div>
         </div>
     </div>
 </div>
 
-Korporativ Mail<br>
+
+
+<!-- Korporativ Mail<br>
 Hostinq<br>
 Domain<br>
 Texniki dəstək<br>
@@ -130,7 +144,7 @@ mebleg yerinde klaviaturada yalniz reqemler acilsin<br>
 butun css-ler evvelce inline yazilsin sonra classlar style faylina kocurulsin<br>
 linklerde hoverde altindaki xett sola dogru itsin<br>
 odenis et buttonu hoverde biraz tundlessin<br>
-
+ -->
 
       
 
