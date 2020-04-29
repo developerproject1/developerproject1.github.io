@@ -112,6 +112,8 @@ text-align: center;
     display: inline;
 }
 .pencere .xana , .pencere select{
+  -webkit-appearance: none;
+    -moz-appearance: none;
     width: 100%;
     padding: 15px 31px;
     border-radius: 3px;
@@ -120,6 +122,8 @@ text-align: center;
 }
 .pencere option {
     padding: 15px 31px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 a.linknew {
     color: #8b8b8b;
@@ -156,8 +160,8 @@ width: 22px;
   
 .newmodal{
   height: 100%;
-  text-align: justify;
   width: 100%;
+  text-align: justify;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -203,9 +207,9 @@ width: 22px;
                       <label>Məbləği daxil edin (AZN)</label>
                       <input type="number" required="" name="mebleg" class="xana"/>
                       <label>Əlaqə nömrəniz</label>
-                      <input type="tel"   inputmode="numeric" required="" name="mobile-number" class="xana elaqe"/>
+                      <input type="tel"   inputmode="numeric" required="" name="nomre" class="xana elaqe"/>
                       <label>
-                        <input type="checkbox"  required="" checked name="" class="form-check-input"/>
+                        <input type="checkbox"  required="" checked  name="qayda" class="form-check-input"/>
                         <a href="#qaydalar" class="linknew" type="button" data-toggle="modal" data-target="#exampleModal" ><span class="navspan">Ödəmə sözləşməsi</span></a>-ni oxudum və razıyam
                       </label>
                   </div>
@@ -228,8 +232,8 @@ width: 22px;
 
 <!-- Modal -->
 <div class="modal fade penceremodal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="newmodal">
-        <div class="modal-dialog" role="document">
+  <div class="newmodal" role="document">
+        <div class="modal-dialog" >
         <div class="modal-content">
           <div class="modal-header position-relative">
             <h3 class="modal-title text-center"  id="exampleModalLabel">Qaydalar</h3>
@@ -256,7 +260,7 @@ width: 22px;
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
 <script type="text/javascript">
   $(".elaqe").val("994");
-  $('input[name="mobile-number"]').mask('+99400 000 00 00'); 
+  $('input[name="nomre"]').mask('+99400 000 00 00'); 
 </script>
 <!-- 
 Korporativ Mail +<br>
@@ -275,9 +279,6 @@ mebleg yerinde klaviaturada yalniz reqemler acilsin +<br>
 butun css-ler evvelce inline yazilsin sonra classlar style faylina kocurulsin<br>
 linklerde hoverde altindaki xett sola dogru itsin +<br>
 odenis et buttonu hoverde biraz tundlessin +<br>
-
-
-      
  -->
    </body>
 </html>
