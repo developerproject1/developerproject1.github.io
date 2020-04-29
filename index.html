@@ -40,8 +40,11 @@
 .arxafon {
     height: 100vh;
     background: #f7f7f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.odeniset {
+ .odeniset {
     -webkit-appearance: none !important;
     width: 100%;
     border: none;
@@ -51,34 +54,54 @@
     font-size: 24px;
     padding: 16px;
     margin-bottom:0;
+    transition: 0.2s ease-in-out;
 }
-.yuxari {
+ .odeniset:hover{
+  background: #538219;
+  transition: 0.2s ease-in-out;
+}
+.pencere .yuxari {
 text-align: center;
     margin: 14px;
     margin-top: 42px;
     font-size: 26px;
     font-weight: 700;
 }
-.merkez {
+.pencere .merkez {
     padding: 22px 60px;
 }
-label {
-    display: block;
+.pencere label {
+    display: inline;
 }
-input , select{
+.pencere .xana , .pencere select{
     width: 100%;
     padding: 15px 31px;
     border-radius: 3px;
     border: 2px solid #f2f2f5;
         margin-bottom: 30px;
 }
-option {
+.pencere option {
     padding: 15px 31px;
 }
-a {
+a.linknew {
     color: #8b8b8b;
-    border-bottom: 1px solid;
     padding-bottom: 3px;
+    position: relative;
+}
+
+ a.linknew .navspan:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 100%;
+    background-color: #8b8b8b;
+    margin-top: 5px;
+    transition: 500ms all ease;
+}
+a.linknew:hover .navspan:after{
+  width:0px;
 }
 .geri {
     padding: 20px 0;
@@ -89,13 +112,35 @@ width: 22px;
     margin-top: 3px;
     margin-right: 8px;
 }
+.penceremodal .modal-footer{
+  padding: 0 !important;
+}
+  
+.newmodal{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 768px){
+  .arxafon .container{
+      margin-right: 20px;
+      margin-left: 20px;
+  }
+}
+@media (max-width: 392px){
+.pencere .merkez {
+    padding: 22px 25px;
+}
+}
 </style>
 
 <div class="arxafon">
-    <div class="container">
+    <div class="container ">
         <div class="row">
             <form method="POST">
-              <div class="col-md-5 col-md-offset-4 pencere">
+              <div class="col-md-6 col-sm-8 col-md-offset-3 col-sm-offset-2 pencere" >
                   <div class="yuxari">
                       Onlayn ödəmə
                   </div>
@@ -112,38 +157,78 @@ width: 22px;
                       <label>Məbləği daxil edin (AZN)</label>
                       <input type="number" required="" name="mebleg" class="xana"/>
                       <label>Əlaqə nömrəniz</label>
-                      <input type="number" value="994"   required="" name="nomre" class="xana elaqe"/>
-                      <label><a href="#qaydalar">Ödəmə sözləşməsi</a>ni oxudum və razıyam</label>
-                      <input type="checkbox" checked name="" class="xana"/>
+                      <input type="text"   required="" name="mobile-number" class="xana elaqe"/>
+                      <label>
+                        <input type="checkbox"  required="" checked name="" class="check"/>
+                        <a href="#qaydalar" class="linknew" type="button" data-toggle="modal" data-target="#exampleModal" ><span class="navspan">Ödəmə sözləşməsi</span></a>-ni oxudum və razıyam
+                      </label>
                   </div>
-                  <input type="submit" name="submit" value="ÖDƏNİŞ ET" class="odeniset"/>
+                  <input type="submit" required="" name="submit" value="ÖDƏNİŞ ET" class="odeniset"/>
               </div>
             </form>
-            <div class="col-md-5 col-md-offset-4 geri">
-                <a href="/"><img src="https://okmedia.az/img/geri.png"> Ana səhifəyə qayıt</a>
+            <div class="col-sm-6 col-sm-offset-3 geri">
+                <a href="/" class="linknew"><img src="https://okmedia.az/img/geri.png"> <span class="navspan">Ana səhifəyə qayıt</span></a>
             </div>
         </div>
     </div>
+
+
+
+
+
 </div>
 
 
 
-<!-- Korporativ Mail<br>
-Hostinq<br>
-Domain<br>
-Texniki dəstək<br>
-Saytın hazırlanması<br>
-Digər<br><br>
+<!-- Modal -->
+<div class="modal fade penceremodal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="newmodal">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title text-center"  id="exampleModalLabel">Qaydalar</h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="odeniset" data-dismiss="modal">Oxudum</button>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
 
-qaydalar sözünə basanda Modal açılsın<br>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+<script type="text/javascript">
+  $(".elaqe").val("994");
+  $('input[name="mobile-number"]').mask('+99400 000 00 00'); 
+</script>
+<!-- 
+Korporativ Mail +<br>
+Hostinq +<br>
+Domain +<br>
+Texniki dəstək +<br>
+Saytın hazırlanması +<br>
+Digər +<br><br>
+
+qaydalar sözünə basanda Modal açılsın +<br>
 fontlar tamkart.azdaki getirilsin<br>
 pencere avtomatik ekranin merkezinde acilsin top ve bottomdan<br>
 mobil responsivlik duzeldilsin<br>
-elaqe nomresi 994 avtomatik yazilmis olsun ve yalniz reqemler acilsin<br>
-mebleg yerinde klaviaturada yalniz reqemler acilsin<br>
+elaqe nomresi 994 avtomatik yazilmis olsun ve yalniz reqemler acilsin +<br>
+mebleg yerinde klaviaturada yalniz reqemler acilsin +<br>
 butun css-ler evvelce inline yazilsin sonra classlar style faylina kocurulsin<br>
-linklerde hoverde altindaki xett sola dogru itsin<br>
-odenis et buttonu hoverde biraz tundlessin<br>
+linklerde hoverde altindaki xett sola dogru itsin +<br>
+odenis et buttonu hoverde biraz tundlessin +<br>
  -->
 
       
