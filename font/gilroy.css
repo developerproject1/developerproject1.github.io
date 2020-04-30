@@ -30,7 +30,7 @@
         url('Gilroy-Bold.woff2') format('woff2'),
         url('Gilroy-Bold.woff') format('woff'),
         url('Gilroy-Bold.ttf') format('truetype');
-    font-weight: bold;
+    font-weight: 900;
     font-style: normal;
 }
 
@@ -42,7 +42,7 @@
         url('Gilroy-Black.woff2') format('woff2'),
         url('Gilroy-Black.woff') format('woff'),
         url('Gilroy-Black.ttf') format('truetype');
-    font-weight: 900;
+    font-weight: bold;
     font-style: normal;
 }
 
