@@ -24,7 +24,6 @@
 
       <!-- yeni elave edilen -->
        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
-      <link rel="stylesheet" type="text/css" href="font/gilroy.css">
      <!-- ======================= -->
 
       <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=0H0LwT_Wijg-mbv77m0m8QXJgutRY6fmN3ocwoh6qeB6LWhUcEtl7hB2MkFWevDq" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9va21lZGlhLmF6L3BheW1lbnQv"/><script type="text/javascript" src="https://okmedia.az/js/jquery-1.9.1.js?ver=1.88"></script>
@@ -34,8 +33,38 @@
    <body class="">
 
 <style>  
-.payment {font: 14px/1.4 'Gilroy', Arial, sans-serif !important;
+
+
+
+
+@font-face {
+    font-family: 'b';
+    src: url('font/Gilroy-Extrabold.html') format('woff2'),
+        url('font/Gilroy-Extrabold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
+
+@font-face {
+    font-family: 's';
+    src: url('font/Gilroy-Semibold.html') format('woff2'),
+        url('font/Gilroy-Semibold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'r';
+    src: url('font/Gilroy.html') format('woff2'),
+        url('font/Gilroy.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.payment {
+  font: 14px/1.4 'r', Arial, sans-serif;
+}
+
 .pencere {
     background: white;
     box-shadow: 0px 0px 25px 0px #ededed;
@@ -95,8 +124,9 @@
     border: none;
     background: #76BC21;
     color: white;
-    font-weight: 700;
-    font-size: 27px;
+    font-weight: 900;
+    font-size: 24px;
+    font-family: 'b';
     padding: 16px;
     margin-bottom:0;
     transition: 0.2s ease-in-out;
@@ -107,6 +137,7 @@
 }
 .pencere .yuxari {
 text-align: center;
+font-family: 'b';
     margin: 14px;
     margin-top: 42px;
     font-size: 26px;
@@ -117,6 +148,7 @@ text-align: center;
 }
 .pencere label {
     display: inline;
+      font-family: 'b';
 }
 .seleclabel{
   position: relative;
