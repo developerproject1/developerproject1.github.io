@@ -1,335 +1,123 @@
-
 <!DOCTYPE html>
-<html lang="az" xmlns="https://www.w3.org/1999/xhtml">
-   <head>
-       <title>Onlayn ödəmə sistemlərinin qurulması | okmedia.az</title>
-      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-      <meta http-equiv="Cache-control" content="public">
-      <meta name="description" content="Online odeme, online odeme sistemlerinin qurulmasi, veb saytlarin yigilmasi, saytlarin yaradilmasi, saytlarin yigilmasi" />
-      <link id="favicon" rel="shortcut icon" href="https://okmedia.az/img/favicon.png?v=6" type="image/x-icon">
-      <meta property="og:site_name" content="OKmedia.az" />
-      <meta property="og:title" content="Saytların hazırlanması və IT həllər - OKmedia.az" />
-      <meta property="og:image" content="https://okmedia.az/img/ok_paylas.png" />
-      <meta property="og:description" content="OKmedia korporativ və şəxsi veb saytların hazırlanması, internet layihələrin tərtibatı, sistem inteqrasiyası və digər İT həllər təklif edir. Geniş müştəri portfelimiz yüksək operativliyimizin nəticəsidir." />
-      <meta property="og:type" content="website" />
-      <link rel="canonical" href="https://okmedia.az/payment/" />
-      <meta name="robots" content="index, follow" />
-      <meta name="author" content="OKmedia" />
-      <meta name="generator" content="Saytlarin yigilmasi" />
-      <meta name="viewport" content="width=device-width">
-      
-      <link rel="stylesheet" type="text/css" href="https://okmedia.az/css/dist/css/bootstrap.css?ver=1.77">
-      <link rel="stylesheet" type="text/css" href="https://okmedia.az/css/style.css?ver=1.78">
-      <link rel="stylesheet" type="text/css" href="https://okmedia.az/css/style2.css?ver=1.777">
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+</head>
+<body>
 
-      <!-- yeni elave edilen -->
-       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
-     <!-- ======================= -->
-
-      <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=0H0LwT_Wijg-mbv77m0m8QXJgutRY6fmN3ocwoh6qeB6LWhUcEtl7hB2MkFWevDq" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9va21lZGlhLmF6L3BheW1lbnQv"/><script type="text/javascript" src="https://okmedia.az/js/jquery-1.9.1.js?ver=1.88"></script>
-      <script type="text/javascript" src="https://okmedia.az/css/dist/js/bootstrap.js?ver=1.88"></script>
-
-   </head>
-   <body class="">
-
-<style>  
-
-
-
-
-@font-face {
-    font-family: 'b';
-    src: url('font/Gilroy-Extrabold.woff2') format('woff2'),
-        url('font/Gilroy-Extrabold.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 's';
-    src: url('font/Gilroy-Semibold.woff2') format('woff2'),
-        url('font/Gilroy-Semibold.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'r';
-    src: url('font/Gilroy.woff2') format('woff2'),
-        url('font/Gilroy.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-.payment {
-  font: 14px/1.4 'r', Arial, sans-serif;
-}
-
-.pencere {
-    background: white;
-    box-shadow: 0px 0px 25px 0px #ededed;
-    margin-top: 46px;
-    border-radius: 3px;
-    overflow: hidden;
-    padding: 0px;
-    color: #a7a7a7;
-}
-.form-check-input {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    position: relative;
-    background-color: #efefef;
-    color: #666;
-    top: 8px;
-    height: 25px;
-    width: 25px;
-    border: 0;
-    border-radius: 6px;
-    cursor: pointer;
-    margin-right: 7px !important;
-    outline: none;
-}
-
-.form-check-input:checked::before {
-    position: absolute;
-    left: 7px;
-    top: 6px;
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    font-size: 11px;
-    content: "\f00c";
-}
-.form-check-input:focus{
-  outline: none !important;
-  border: none;
-}
-.form-check-input:hover {
-     background-color: #f7f7f7;
-}
-
-.form-check-input:checked {
-     background-color: #76bc21;
-     color: #fff;
-}
-.arxafon {
-    height: 100vh;
-    background: #f7f7f9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
- .odeniset {
-    -webkit-appearance: none !important;
-    width: 100%;
-    border: none;
-    background: #76BC21;
-    color: white;
-    font-weight: 900;
-    font-size: 24px;
-    font-family: 'b';
-    padding: 16px;
-    margin-bottom:0;
-    transition: 0.2s ease-in-out;
-}
- .odeniset:hover{
-  background: #538219;
-  transition: 0.2s ease-in-out;
-}
-.pencere .yuxari {
-text-align: center;
-font-family: 'b';
-    margin: 14px;
-    margin-top: 42px;
-    font-size: 26px;
-    font-weight: 700;
-}
-.pencere .merkez {
-    padding: 22px 60px;
-}
-.pencere label {
-    display: inline;
-      font-family: 'b';
-}
-.seleclabel{
-  position: relative;
-}
-.seleclabel i{
-  position: absolute;
-  top: 40px;
-    right: 19px;
-    font-size: 12px;
-    color: #a7a7a7;
-}
-.pencere .xana , .pencere select{
-  -webkit-appearance: none;
-    -moz-appearance: none;
-    width: 100%;
-    padding: 15px 31px;
-    border-radius: 3px;
-    border: 2px solid #f2f2f5;
-        margin-bottom: 30px;
-}
-.pencere option {
-    padding: 15px 31px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-}
-a.linknew {
-    color: #8b8b8b;
-    padding-bottom: 3px;
-    position: relative;
-}
-
- a.linknew .navspan:after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 1px;
-    width: 100%;
-    background-color: #8b8b8b;
-    margin-top: 5px;
-    transition: 500ms all ease;
-}
-a.linknew:hover .navspan:after{
-  width:0px;
-}
-.geri {
-    padding: 20px 0;
-}
-.geri img {
-width: 22px;
-    float: left;
-    margin-top: 3px;
-    margin-right: 8px;
-}
-.penceremodal .modal-footer{
-  padding: 0 !important;
-}
-  
-.newmodal{
-  height: 100%;
-  width: 100%;
-  text-align: justify;
-}
-.penceremodal.modal.in{
-    display: flex !important;
-  justify-content: center;
-  align-items: center;
-}
-.newmodal .modal-header .close {
-    margin-top: 0px !important;
-    position: absolute;
-    top: 13px;
-    right: 13px;
-}
-
-@media (max-width: 768px){
-  .arxafon .container{
-      margin-right: 20px;
-      margin-left: 20px;
-  }
-}
-@media (max-width: 392px){
-.pencere .merkez {
-    padding: 22px 25px;
-}
-}
-</style>
-<section class="payment">
-<div class="arxafon">
-    <div class="container ">
+	  <head id="headLine"></head>
+    <header id="nav-menu">
+      <div class="container">
         <div class="row">
-            <form method="POST">
-              <div class="col-md-6 col-sm-8 col-md-offset-3 col-sm-offset-2 pencere" >
-                  <div class="yuxari">
-                      Onlayn ödəmə
-                  </div>
-                  <div class="merkez">
-                      <label class="seleclabel">
-                        Xidməti seçin <i class="fas fa-chevron-down"></i>
-                      <select>
-                        <option>Korporativ Mail</option>
-                        <option>Hostinq</option>
-                        <option>Domain</option>
-                        <option>Texniki dəstək</option>
-                        <option>Saytın hazırlanması</option>
-                        <option>Digər</option>
-                      </select>
-                      </label>
-                      <label>Məbləği daxil edin (AZN)
-                      <input type="number" required="" name="mebleg" class="xana"/>
-                      <label>Əlaqə nömrəniz</label>
-                      <input type="tel"   inputmode="numeric" required="" name="nomre" class="xana elaqe"/>
-                      <label>
-                        <input type="checkbox"  required="" checked  name="qayda" class="form-check-input"/>
-                        <a href="#qaydalar" class="linknew" type="button" data-toggle="modal" data-target="#exampleModal" ><span class="navspan">Ödəmə sözləşməsi</span></a>-ni oxudum və razıyam
-                      </label>
-                  </div>
-                  <input type="submit" required="" name="submit" value="ÖDƏNİŞ ET" class="odeniset"/>
-              </div>
-            </form>
-            <div class="col-sm-6 col-sm-offset-3 geri">
-                <a href="/" class="linknew"><img src="https://okmedia.az/img/geri.png"> <span class="navspan">Ana səhifəyə qayıt</span></a>
+          <div class="col-md-12">
+          <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="/">
+              <img src="/img/kristinafurs.png" alt="">
+            </a>
+            <div class="social">
+              <a style="color:white" href="/az/">AZ</a>
+              <a href="/en/">EN</a>
+              <a href="/ru/">RU</a>            
             </div>
-        </div>
-    </div>
-</div>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item sub-menu-parent animate">
+                  <a class="nav-link"><span>HAQQIMIZDA</span></a>
+                  <ul class="sub-menu">
+                        <li class="animate"><a href="/about/" class="page-scroll">Kristina haqqında</a></li>
+                        <li class="animate"><a href="/cv/" class="page-scroll">CV göndər</a></li>
+                        <li class="animate"><a href="/teams/" class="page-scroll">Komandamız</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/collection/"><span>KOLLEKSİYA</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/campaigns/"><span>KAMPANİYALAR</span></a>
+                </li>
+                <li class="nav-item sub-menu-parent">
+                  <a class="nav-link"><span>QALEREYA</span></a>
+                    <ul class="sub-menu">
+                        <li class="animate"><a href="/foto-gallery/" class="page-scroll">Foto qalereya</a></li>
+                        <li class="animate"><a href="/video-gallery/" class="page-scroll">Video qalereya</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/contact"><span>ƏLAQƏ</span></a>
+                </li>
+              </ul>
+            </div>
 
-
-
-<!-- Modal -->
-<div class="modal fade penceremodal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-        <div class="newmodal" >
-        <div class="modal-content">
-          <div class="modal-header position-relative">
-            <h3 class="modal-title text-center"  id="exampleModalLabel">Qaydalar</h3>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
+            <div class="search">
+              
+              <form class="form" action="" name="searchform" method="post">
+                  <i class="fas fa-search" style="background: #474747; padding: 13px; border-radius: 50%;"></i>
+                  <input type="hidden" name="do" value="search">
+			      <input type="hidden" name="subaction" value="search">
+                    <input placeholder="Məhsulun kodu" class="searchInput" type="search" name="story"><br></form>
+            </div>
+            <div class="call">
+              <img src="/img/operator.png" alt="">
+              <p>*8585</p>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
             </button>
-          </div>
-          <div class="modal-body">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="odeniset" data-dismiss="modal">Oxudum</button>
+          </nav>
           </div>
         </div>
       </div>
-  </div>
-</div>
+    </header>
 
-</section>
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
-<script type="text/javascript">
-  $(".elaqe").val("994");
-  $('input[name="nomre"]').mask('+99400 000 00 00'); 
-</script>
-<!-- 
-Korporativ Mail +<br>
-Hostinq +<br>
-Domain +<br>
-Texniki dəstək +<br>  
-Saytın hazırlanması +<br>
-Digər +<br><br>
+     <section id="slider">
+      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
 
-qaydalar sözünə basanda Modal açılsın +<br>
-fontlar tamkart.azdaki getirilsin<br>
-pencere avtomatik ekranin merkezinde acilsin top ve bottomdan<br>
-mobil responsivlik duzeldilsin<br>
-elaqe nomresi 994 avtomatik yazilmis olsun ve yalniz reqemler acilsin +<br>
-mebleg yerinde klaviaturada yalniz reqemler acilsin +<br>
-butun css-ler evvelce inline yazilsin sonra classlar style faylina kocurulsin<br>
-linklerde hoverde altindaki xett sola dogru itsin +<br>
-odenis et buttonu hoverde biraz tundlessin +<br>
- -->
-   </body>
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <img src="/img/slider.png" class="d-block w-100" alt="...">
+            <div class="container">
+              <div class="col-md-12">
+                <div class="carousel-caption d-none d-md-block animated fadeInLeftBig">
+                  <h5>İncə zövqlər ünvanı,</h5>
+                  <p>Zövqlü xanımlarım seçimi</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <img src="/img/slider.png" class="d-block w-100" alt="...">
+            <div class="container">
+              <div class="col-md-12">
+                <div class="carousel-caption d-none d-md-block animated fadeInLeftBig">
+                  <h5>İncə zövqlər ünvanı,</h5>
+                  <p>Zövqlü xanımlarım seçimi</p>
+                </div>
+              </div>
+            </div>
+          </div>
+         
+        </div>
+        
+
+      </div>     
+    </section>
+			
+
+
+
+	<script src="/js/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+	<script src="/js/popper.min.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/jquery.fancybox.min.js"></script>
+	<script src="/js/main.js"></script>
+</body>z
 </html>
-
