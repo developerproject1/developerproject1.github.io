@@ -243,25 +243,6 @@ font-size: 12px;
     font-weight: bold;
 }
 
-.searchCont{margin-bottom: 30px;margin-top: 102px;}
-.clr{margin-top: 55px;color:red;}
-.dpad{margin: 44px 0;}
-.textSocial{
-    position: absolute;
-    color: #f6dd8d;
-    background: #1c2229;
-    font-size: 12px;
-    font-weight: 600;
-    top: 6px;
-    left: 31px;
-    padding: 7px 16px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    transition:200ms all ease;
-}
-.textSocial:hover{
-    left:25px;
-}
 
 
 .overlay {
@@ -288,7 +269,10 @@ font-size: 12px;
 
 
 .sub-menu li:hover{
-    background-color:#e0c36a;
+    background-color:#2b3c5b;
+}
+.sub-menu li:hover a{
+    color: white;
 }
 .sub-menu-parent{
     position: relative;
@@ -298,10 +282,10 @@ font-size: 12px;
     display: block;
     padding: 10px 20px;
     margin-right: 0px;
-    font-size:13px;
+    font-size:12px;
     font-weight:600;
     clear: both;
-    color: #000;
+    color: #aeb9cc;
     white-space: nowrap;
     -webkit-transition: 0.3s all ease-out;
     -o-transition: 0.3s all ease-out;
@@ -327,9 +311,8 @@ font-size: 12px;
     top: 46px;
     left: 0px;
     margin: 0;
-    background-color: #fff;
+    background-color: #232e43;
     text-align: left;
-    border-top: 2px solid #e0c36a;
 }
 .sub-menu-parent:focus .sub-menu, .sub-menu-parent:hover .sub-menu {
     opacity: 1;
