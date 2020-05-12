@@ -288,5 +288,5 @@ body{
     left: 0px;
     margin: auto;
     right: 0;
-    height: calc(100% - 400px);
+    height: calc(100%/3);
 }
