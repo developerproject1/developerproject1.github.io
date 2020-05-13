@@ -113,8 +113,11 @@ body{
 .block{
     display:block !important;
 }
-.navbar-brand img{
+.navbar-brand .veka{
     width: 100px;
+}
+.navbar-brand .euro{
+    width: 80px;
 }
 #nav-menu{
     position: absolute;
@@ -123,8 +126,8 @@ body{
     width: 100%;
 }
 #nav-menu .nav-link{
-       padding-right: 15px;
-    padding-left: 25px;
+    padding-right: 10px;
+    padding-left: 10px;
     color: white;
     cursor: pointer;
     font-weight: 600;
@@ -158,7 +161,7 @@ body{
     border-radius: 18px;
     display: inline-flex;
     margin-top: 8px;
-    margin-left: 15px;
+    /*margin-left:5px;*/
 }
 .social a {
     font-size: 11px;
@@ -221,6 +224,8 @@ body{
 .carousel-caption  .blue{
  background: linear-gradient(45deg, #0b2f7ea8, #5f89e4);
     padding: 20px 56px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
 }
 .carousel-caption  .white{
     padding: 40px 40px;
@@ -242,9 +247,12 @@ font-size: 12px;
     margin-bottom: 0;
     font-weight: bold;
 }
+ 
 
-
-
+.carousel-item img{
+    height: 700px;
+    object-fit: cover;
+}
 .overlay {
     background: linear-gradient(#2869e1, transparent);
     position: absolute;
@@ -280,16 +288,16 @@ font-size: 12px;
 
 .sub-menu li a {
     display: block;
-    padding: 10px 20px;
+    padding: 10px 80px 10px 20px;
     margin-right: 0px;
     font-size:12px;
     font-weight:600;
     clear: both;
     color: #aeb9cc;
     white-space: nowrap;
-    -webkit-transition: 0.3s all ease-out;
-    -o-transition: 0.3s all ease-out;
-    transition: 0.3s all ease-out;
+    -webkit-transition: 0.1s all ease-out;
+    -o-transition: 0.1s all ease-out;
+    transition: 0.1s all ease-out;
 }
 
 @media (min-width: 992px) {
@@ -302,9 +310,9 @@ font-size: 12px;
     -webkit-transform-origin: top;
     -ms-transform-origin: top;
     transform-origin: top;
-    -webkit-transition: all 300ms ease-in-out 0s;
-    -o-transition: all 300ms ease-in-out 0s;
-    transition: all 300ms ease-in-out 0s;
+    -webkit-transition: all 100ms ease-in-out 0s;
+    -o-transition: all 100ms ease-in-out 0s;
+    transition: all 100ms ease-in-out 0s;
     z-index: 100;
     list-style-type: none;
     position: absolute;
