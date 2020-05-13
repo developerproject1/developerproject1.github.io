@@ -338,7 +338,7 @@ font-size: 12px;
  /*about section*/
 .about{
     padding:60px 0;
-    background: #f4f4f4;
+    /*background: #f4f4f4;*/
 }
 .aboutimg{
     padding: 40px;
@@ -353,5 +353,9 @@ font-size: 12px;
 }
 .aboutus p {
     color: #292f37;
+    text-align: justify;
 }
+.aboutus i{
+    color: #2869e1;
+} 
 /*///////////////////*/
