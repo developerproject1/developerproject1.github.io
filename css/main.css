@@ -329,3 +329,20 @@ font-size: 12px;
     transform: scale(1, 1);
 }
  }
+
+
+
+
+
+
+ /*about section*/
+.about{
+    padding:60px 0;
+    background: #f4f4f4;
+}
+.aboutimg{
+    padding: 40px;
+}
+ .aboutimg img{
+    width: 100%;
+ }
