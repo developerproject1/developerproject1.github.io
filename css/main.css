@@ -351,6 +351,7 @@ font-size: 12px;
     display: flex;
     flex-wrap: wrap;
 }
+/*///////////////////*/
 .aboutus p {
     color: #292f37;
     text-align: justify;
@@ -358,4 +359,85 @@ font-size: 12px;
 .aboutus i{
     color: #2869e1;
 } 
-/*///////////////////*/
+/*//////////////////*/
+
+/*gallery section*/
+.gallery{
+    background: #f5f5f5;
+    padding: 60px 0;
+}
+.gallery .card{
+    position: relative;
+    height: 340px;
+    background: transparent;
+    border: none;
+    overflow: hidden;
+    border-radius: 2px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+.gallery .card img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index:;
+}
+
+.gallery .card .text{
+    position: absolute;
+    bottom: -20px;
+    z-index: 2;
+    color: white;
+    word-wrap: break-word;
+    width: 100%;
+    padding: 0px 30px;
+    transition: 0.3s ease-in-out;
+}
+.gallery .card:after , .gallery .card:before{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    content: '';
+    transition: 0.3s ease-in-out;
+    opacity: 0.99;
+    z-index: 1;
+}
+.gallery .card:after{
+    background: linear-gradient(to top, #2b1919, rgba(43, 25, 25, 0));
+    opacity: 1;
+}
+.gallery .card:before{
+    background: linear-gradient(to top, #2b1919, rgba(43, 25, 25, 0.5));
+    opacity: 0;
+}
+.gallery .card .text a{
+    text-decoration: none;
+    color: white;
+}
+
+.gallery .card:hover .text{
+    bottom: 15px;
+    transition: 0.3s ease-in-out;
+}
+.gallery .card:hover:after{
+    opacity: 0;
+    transition: opacity 0.3s
+}
+.gallery .card:hover:before{
+    opacity: 1;
+    transition: opacity 0.3s
+}
+ /*///////////////*/
+
+
+
+ /*product*/
+ .news{
+    padding: 60px 0; 
+ }
+
+ /*/////////////////*/
