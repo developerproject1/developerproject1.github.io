@@ -346,3 +346,12 @@ font-size: 12px;
  .aboutimg img{
     width: 100%;
  }
+/*//////////////////*/
+.aboutus{
+    display: flex;
+    flex-wrap: wrap;
+}
+.aboutus p {
+    color: #292f37;
+}
+/*///////////////////*/
