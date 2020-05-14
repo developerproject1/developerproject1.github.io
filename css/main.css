@@ -451,11 +451,12 @@ font-size: 12px;
     padding: 0px 30px;
     transition: 0.3s ease-in-out;
 }
-.gallery .card .text h5{
-    font-size: 18px;
-}
-.gallery .card .text p{
-    font-size: 14px;
+.gallery .card .text h5 {
+    font-size: 17px;
+}   
+.gallery .card .text p {
+    font-size: 13px;
+    color: #a99f94;
 }
 .gallery .card:after , .gallery .card:before{
     height: 100%;
@@ -510,30 +511,38 @@ font-size: 12px;
     min-height: 170px;
     height: auto;
 }
-
-.news .card .card-body .card-title{
-    color:#4b4f52 !important;
-    font-weight: 600;
-    font-size: 16px;
+.news .card-body{
+        padding: 11px 14px !important;
 }
+.news .card .card-body .card-title {
+    color: #4b4f52 !important;
+    font-weight: 600;
+    font-size: 13px;
+}
+    
 .like{
     float: left;
 }
-.card-content{
-    border-top:1px solid #00000020;
+
+.card-content {
+    border-top: 1px solid #00000020;
     padding-top: 10px;
-    font-size: 20px;
+    font-size: 16px;
 }
+
+
 .card-content .like i {
     color: #8b95a1;
 }
 
-.card-content .tl{
-    font-size: 18px;
+
+.card-content .tl {
+    font-size: 16px;
     font-weight: 500;
     text-align: right;
     color: rgb(45, 54, 64);
 }
+
 
 .details{
     display: flex;
@@ -541,15 +550,15 @@ font-size: 12px;
     align-items: center;
     transition: 0.3s all;
 }
-.details .btn{
-        border-radius: 2px;
+.details .btn {
+    border-radius: 2px;
     border: 1px solid rgba(75,79,82,.2);
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     color: #2d3640;
     width: 220px;
     height: 50px;
-      display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     transition: 0.3s ease-in-out;
@@ -560,21 +569,24 @@ font-size: 12px;
 
  /*onfooter*/
 
- .onfooter{
-    background: #5f89e4;
-    padding: 50px 0;
- }
- .onfooter h1{
-    font-size: 42px;
-    font-weight: 300;
+.onfooter {
+    background: linear-gradient(45deg, #68a0f3, #527edf);
+    padding: 38px 0;
+}
+
+.onfooter h1 {
+    font-size: 32px;
+    font-weight: 400;
     color: #fff;
-    padding-bottom: 30px;
+    padding-bottom: 22px;
     margin: auto;
     text-align: center;
- }
-  .onfooter .btn{
+}
+
+
+.onfooter .btn {
     width: 270px;
-    height: 70px;
+    padding: 15px 20px;
     border-radius: 2px;
     background-color: #fff;
     font-size: 20px;
@@ -582,7 +594,9 @@ font-size: 12px;
     color: #2d3640 !important;
     border: none;
     transition: 0.3 ease-in-out;
-  }
+}
+
+
 
   .onfooter .btn:hover{
     background-color: #f6f6f6 !important;
