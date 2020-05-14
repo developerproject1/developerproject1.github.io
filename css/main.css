@@ -638,7 +638,7 @@ font-size: 12px;
     margin-bottom: 29px;
    }
    .links ul li a{
-    font-size: 16px;
+    font-size: 13px;
     text-align: left;
     color: #d2dbe4;
     padding: 0;
@@ -655,7 +655,7 @@ font-size: 12px;
    }
     .bottomlinks .nav-link{
         padding: 0;
-        font-size: 14px;
+        font-size: 12px;
     text-align: left;
     color: #8b95a1;
     margin-bottom: 30px;
@@ -665,7 +665,7 @@ font-size: 12px;
 
     .copyright{
            padding: 0;
-        font-size: 14px;
+        font-size: 12px;
     text-align: right;
     color: #8b95a1;
         margin-top: 15px;
