@@ -113,17 +113,24 @@ body{
 .block{
     display:block !important;
 }
+.navbar{
+    padding: 0 !important;
+}
 .navbar-brand .veka{
     width: 100px;
 }
 .navbar-brand .euro{
     width: 80px;
 }
-#nav-menu{
+#nav-menu {
     position: absolute;
     z-index: 99999999;
     margin: 0 auto;
     width: 100%;
+   padding-top: 10px;
+}
+.fixednav{
+
 }
 #nav-menu .nav-link{
     padding-right: 10px;
@@ -155,13 +162,12 @@ body{
     display: none;
 }
 .social {
-       padding: 10px 15px;
+    padding: 10px 15px;
     background-color: transparent;
     border: 1px solid #f8c92c;
-    border-radius: 18px;
+    border-radius: 35px;
     display: inline-flex;
     margin-top: 8px;
-    /*margin-left:5px;*/
 }
 .social a {
     font-size: 11px;
@@ -214,7 +220,7 @@ body{
     height: auto;
     bottom: 50px;
     text-align: left;
-    left: 15px;
+    left: 0px;
     margin: 0;
     padding: 0;
     display: flex;
@@ -272,7 +278,7 @@ font-size: 12px;
     left: 0px;
     margin: auto;
     right: 0;
-    height: calc(100%/3);
+    height: calc(100%/2);
 }
 
 
@@ -341,7 +347,7 @@ font-size: 12px;
     /*background: #f4f4f4;*/
 }
 .aboutimg{
-    padding: 40px;
+    padding: 30px;
 }
  .aboutimg img{
     width: 100%;
@@ -352,12 +358,17 @@ font-size: 12px;
     flex-wrap: wrap;
 }
 /*///////////////////*/
+.aboutus h5{
+    font-size: 19px;
+}
 .aboutus p {
     color: #292f37;
     text-align: justify;
+    font-size: 14px;
 }
 .aboutus i{
     color: #5f89e4;
+    font-size: 28px;
 } 
 /*//////////////////*/
 
@@ -397,6 +408,12 @@ font-size: 12px;
     padding: 0px 30px;
     transition: 0.3s ease-in-out;
 }
+.gallery .card .text h5{
+    font-size: 18px;
+}
+.gallery .card .text p{
+    font-size: 14px;
+}
 .gallery .card:after , .gallery .card:before{
     height: 100%;
     width: 100%;
@@ -417,6 +434,7 @@ font-size: 12px;
 .gallery .card .text a{
     text-decoration: none;
     color: white;
+    font-size: 12px
 }
 
 .gallery .card:hover .text{
