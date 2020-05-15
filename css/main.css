@@ -148,8 +148,8 @@ body{
 #nav-menu .nav-link span:after{
     content: "";
     position: relative;
-    width: 6px;
-    height: 6px;
+    width: 5px;
+    height: 5px;
     border-radius:50%;
     display: block;
     background-color: white;
@@ -308,6 +308,8 @@ body{
 }
 .fixednav#nav-menu .nav-link span:after{
     background: #232e43;
+     height: 6px;
+    width: 6px;
 }
 /*carusel*/
 .carousel-caption {
