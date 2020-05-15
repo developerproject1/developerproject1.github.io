@@ -148,9 +148,9 @@ body{
 #nav-menu .nav-link span:after{
     content: "";
     position: relative;
-    width: 5px;
-    height: 5px;
-    border-radius:100%;
+    width: 6px;
+    height: 6px;
+    border-radius:50%;
     display: block;
     background-color: white;
     margin:0 auto;
