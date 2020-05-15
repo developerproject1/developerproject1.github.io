@@ -455,6 +455,9 @@ font-size: 12px;
     color: #5f89e4;
     font-size: 28px;
 } 
+/*.aboutus .col-11{
+    padding-right: 0!important;
+}*/
 /*//////////////////*/
 
 /*gallery section*/
@@ -693,14 +696,14 @@ font-size: 12px;
     color: #bfc8d2;
     margin-bottom: 29px;
    }
-   .links ul li a{
-    font-size: 13px;
-    text-align: left;
-    color: #d2dbe4;
-    padding: 0;
-    margin-bottom: 15px;
-    font-weight: 500;
-   }
+  .links ul li a {
+      font-size: 13px;
+      text-align: left;
+      color: #d2dbe4;
+      padding: 0;
+      margin-bottom: 15px;
+      font-weight: 200;
+  }
     .bottomlinks .nav-link:hover , .links ul li a:hover{
     color: white;
     transition: 0.3s ease-in-out;
