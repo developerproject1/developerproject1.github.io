@@ -237,7 +237,7 @@ nav .navbar-toggler {
     position: absolute !important;
     top: 42px;
     outline: none;
-    right: 0px !important;
+    right: 15px !important;
 }
 nav .navbar-toggler span:nth-child(3) {
     width: 80%;
@@ -776,23 +776,44 @@ font-size: 12px;
 }
 
 @media (max-width: 992px) {
+    .logoimage{
+        margin-left: 20px;
+    }
     .call{
         position: absolute;
-        top: 33px;
-         right: 11%;
+        top: 30px;
+         right: 100px;
     }
     .fixednav .call{
-        top: 17px;
+        top: 14px;
     }
     .social{
         position: absolute;
         top: 35px;
-        left: 30%;
+        left: 250px;
     }
     .fixednav .social{
-        top: 23px;
-        left: 20%;
+        top: 21px;
+        left:170px;
     }
+    .mynav{
+        position: absolute;
+        width: 100%;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+    .fixednav{
+        box-shadow: none;
+        background: transparent;
+    }
+   .fixednav .mynav {
+    background: white;
+    transition: .3s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 30px 0px;
+        }
+
+
 }
 
 @media (max-width: 768px) {
@@ -800,25 +821,50 @@ font-size: 12px;
 }
 
 @media (max-width: 576px) {
-    
+    .social{
+        left: 230px;
+    }
+    .fixednav .social{
+        left:160px;
+    }
+      .call{
+        right: 80px;
+      }
 }
 
+@media (max-width: 500px) {
+       .call{
+        display: none;
+       }
+}
 @media (max-width: 440px) {
     
 }
 @media (max-width: 392px) {
-
+     .navbar-brand .veka {
+    width: 70px;
+    }
+    .navbar-brand .euro {
+    width: 50px;
+    }
+    .social{
+        top: 21px;
+        left: 160px;
+    }
+    .navbar-toggler {
+    top: 28px !important;
+    }
 }
 
 
 
 /*////////////////*/
 
-/*
+
 
     section , footer{
         display: none;
     }
     #slider{
         display: block;
-    */}
+    }
