@@ -776,6 +776,7 @@ font-size: 12px;
 }
 
 @media (max-width: 992px) {
+
     .logoimage{
         margin-left: 20px;
     }
@@ -817,11 +818,42 @@ font-size: 12px;
         color: black !important;
     }
 
+    .carousel-item img {
+    height: 500px;
+    object-fit: cover;
+    }
+    #why .col-md-3{
+        text-align: center;
+        font-size: 14px;
+        justify-content: unset !important;
+        margin-bottom: 10px;
+    }
+    .aboutimg img {
+    transform: translateX(10px);
+    }
+    .gallery .card {
+    height: 250px;
+    }
+    .news .card{
+        margin-bottom: 30px;
+    }
 
 }
 
 @media (max-width: 768px) {
-    
+      .carousel-item img {
+    height: 400px;
+    object-fit: cover;
+    }
+     .gallery .card {
+    margin-bottom: 30px;
+    }
+    .onfooter h1 {
+    font-size: 23px;}
+
+    .onfooter .btn {
+    width: 214px;
+    padding: 10px 17px;}
 }
 
 @media (max-width: 576px) {
@@ -834,6 +866,20 @@ font-size: 12px;
       .call{
         right: 80px;
       }
+   #why .col-md-3{
+    justify-content: center !important;
+
+   }
+   .aboutus h3 , .aboutus h5 ,  .aboutus p {
+    text-align: center;
+    }
+    .aboutus .col-sm-1{
+        display: flex;
+        justify-content: center;
+    }
+ 
+    .aboutus i {
+    font-size: 37px;}
 }
 
 @media (max-width: 500px) {
@@ -842,7 +888,10 @@ font-size: 12px;
        }
 }
 @media (max-width: 440px) {
-    
+      .carousel-item img {
+    height: 300px;
+    object-fit: cover;
+    }
 }
 @media (max-width: 392px) {
      .navbar-brand .veka {
