@@ -272,7 +272,7 @@ nav .navbar-toggler span:nth-child(3) {
     transition: 0.1s all ease-out;
 }
 
-@media (min-width: 992px) {
+
     .sub-menu {
     opacity: 1;
     -webkit-transform: scale(1, 0);
@@ -294,14 +294,15 @@ nav .navbar-toggler span:nth-child(3) {
     background-color: #232e43;
     text-align: left;
 }
+@media (min-width: 992px){
 .sub-menu-parent:focus .sub-menu, .sub-menu-parent:hover .sub-menu {
     opacity: 1;
     -webkit-transform: scale(1, 1);
     -ms-transform: scale(1, 1);
     transform: scale(1, 1);
 }
- }
 
+}
 
 
 .fixednav {
@@ -773,6 +774,9 @@ font-size: 12px;
     .call p ,.call a {
         display: none;
     }
+    .bottomlinks .nav-link {
+        margin-right: 16px;
+    }
 }
 
 @media (max-width: 992px) {
@@ -837,6 +841,75 @@ font-size: 12px;
     .news .card{
         margin-bottom: 30px;
     }
+    #nav-menu {
+        top: 0;
+    }
+    
+    /*sociallari saga cekmek/*/
+    .mobilefooter .footersocial{
+        justify-content: flex-end;
+    }
+    .socialnew{
+        margin-right: 0;
+        margin-left: 15px;
+    }
+    .divs{
+        float: right;
+    }
+    /*destek saga cekmek*/
+
+    .help .headtxt,
+    .help .links a{
+        text-align: right;
+    }
+    .Kategoriler .headtxt ,
+    .Kategoriler .links a{
+        text-align: center;
+    }
+    .bottomlinks {
+        justify-content: space-between;
+    }
+       .bottomlinks .nav-link {
+        margin-right: 0px;
+    }
+    .copyright{
+        text-align: center;
+    }
+    #nav-menu .nav-link {
+    text-align: center;
+    color: black;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 18px;
+    }
+    #nav-menu .nav-link span:after {
+        display: none;
+    }
+     .sub-menu-parent:focus .sub-menu, .sub-menu-parent:hover .sub-menu {
+           display: block !important;
+        }
+      .sub-menu {
+        position: relative;
+        background: white;
+        top: 0;
+        left: 0;
+        display: none !important;;
+        border: 1px solid #232E43;
+        padding: 0;
+         opacity: 1;
+    -webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    transform: scale(1, 1);
+      }
+      .sub-menu li a {
+        display: block;
+        padding: 16px 20px 16px 20px;
+        font-size: 16px;
+        color: black;
+        text-align: center;
+        color: black;
+        }
+       
 
 }
 
@@ -854,6 +927,31 @@ font-size: 12px;
     .onfooter .btn {
     width: 214px;
     padding: 10px 17px;}
+    
+    .footerlogos{
+         display: flex;
+         justify-content: space-between;
+    }
+    .footerlogos img{
+        object-fit: contain;
+    }
+
+    .mobilefooter .headtxt{
+        text-align: right;
+    }
+    .mobilefooter .links a{
+        text-align: right;
+    }
+    .Kategoriler .headtxt,
+    .help .links a ,
+    .Kategoriler .links a{
+        text-align: left;
+    }
+  
+    .help .headtxt {
+        margin-top: 10px;
+        text-align: left;
+     }
 }
 
 @media (max-width: 576px) {
@@ -880,6 +978,23 @@ font-size: 12px;
  
     .aboutus i {
     font-size: 37px;}
+
+    footer .headtxt , footer .links a {
+        text-align: center !important;
+    }
+    .mobilefooter{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    }
+    .bottomlinks {
+        flex-direction: column;
+    }
+    .bottomlinks  .nav-link{
+        text-align: center;
+        margin-bottom: 10px;
+    }
 }
 
 @media (max-width: 500px) {
