@@ -22,5 +22,7 @@
          scrolling();
 
 
-
-      
+   $('.sub-menu-parent').click(function () {
+                $(this).find('.sub-menu').toggleClass('d-block');
+          })
+              
