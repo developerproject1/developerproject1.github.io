@@ -386,6 +386,7 @@ nav .navbar-toggler span:nth-child(3) {
     display:none;
     padding-left: 15px;
     list-style-type:none; 
+    line-height: 2;
 }
 
 .right-menu .mobile-menu .navbar-navs .nav-item .sub-menu li{
@@ -444,7 +445,8 @@ nav .navbar-toggler span:nth-child(3) {
 }
 
 .right-menu .mobile-menu .close-icon{
-    margin: 25px;
+   margin: 29px;
+    margin-top: 38px;
     text-align: end;
 }
 
