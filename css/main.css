@@ -751,11 +751,11 @@ font-size: 12px;
     width: 100%;
 }
 
-.news .card  img{
+.news .card  .card-img-top{
     width: 100%;
     object-fit: cover;
-    max-height: 140px;
-    height: auto;
+   max-height: 140px;
+    height: 120px;
 }
 .news .card-body{
         padding: 11px 14px !important;
@@ -1096,6 +1096,7 @@ footer .contact i {
        .sub-menu{
         display: none;
        }
+
         
 }
 
@@ -1182,18 +1183,42 @@ footer .contact i {
         text-align: center;
         margin-bottom: 10px;
     }
+    #why .col-md-3 {
+    text-align: center;
+    padding: 4px;
+    font-size: 12px;}
+    #why {
+    padding: 15px;}
+
+
+       .aboutus img {
+        width: 24%;
+        transform: unset;}
+        .news .card .card-img-top {
+    width: 100%;
+    object-fit: cover;
+    max-height: 250px;
+    height: 200px;
+    }
 }
 
 @media (max-width: 500px) {
        .call{
         display: none;
        }
+       #why .icon {
+    width: 14px;
+    height: 14px;}
 }
 @media (max-width: 440px) {
       .carousel-item img {
     height: 300px;
     object-fit: cover;
     }
+        #why .col-md-3 {
+    text-align: center;
+    padding: 2px;
+    font-size: 11px;}
 }
 @media (max-width: 392px) {
      .navbar-brand .veka {
@@ -1209,6 +1234,11 @@ footer .contact i {
     .navbar-toggler {
     top: 28px !important;
     }
+    #why .icon {
+    width: 12px;
+    height: 12px;
+    }
+  
 }
 
 
