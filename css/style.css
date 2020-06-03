@@ -845,6 +845,8 @@ button:focus {
 #our-work .title-text {
     text-align: center;
     margin-bottom: 40px;
+    font-size: 36px;
+    font-weight: 600;
 }
 
 #our-work .flex-box {
