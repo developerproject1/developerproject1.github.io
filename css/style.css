@@ -73,6 +73,8 @@ button:focus {
     transform: scale(1, 1);
 }
 
+
+
 .header .nav-menu .nav-item .sub-menu .sub-menu-style {
     left: 194px;
 }
@@ -110,13 +112,14 @@ button:focus {
     list-style-type: none;
     position: absolute;
     top: 0;
-    left: 160px;
+    left: 195px;
     margin: 0;
     background-color: #232e43;
     text-align: left;
 }
 
 .header .nav-menu .nav-item .sub-menu {
+    width: 195px !important;
     width: max-content;
     opacity: 1;
     -webkit-transform: scale(1, 0);
@@ -157,6 +160,7 @@ button:focus {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
     cursor: pointer;
 }
 
@@ -179,9 +183,10 @@ button:focus {
     overflow: hidden;
     z-index: 10;
     display: none;
-    top: 68px;
+    top: 42px;
     z-index: 25;
-    right: 124px;
+    right: initial;
+    left: -6px;
 }
 
 .header.header-active {
@@ -198,7 +203,7 @@ button:focus {
 
 .header .languages .lang-dropdown .langs li {
     list-style: none;
-    padding: 5px;
+    padding: 5px 5px 5px 9px;
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -212,8 +217,8 @@ button:focus {
 
 .header .languages .lang-dropdown .langs li a {
     color: #666666;
-    font-family: gothambold;
     font-size: 11px;
+    font-weight: 900;
 }
 
 .header .languages .lang-dropdown .langs li img {
@@ -223,17 +228,10 @@ button:focus {
     margin-right: 5px;
 }
 
-
-
-
-
-
-
-
 /* //header */
 /* slider */
 #slider-section .carousel .carousel-inner {
-    height: 600px
+    height: 752px
 }
 
 #slider-section .carousel .carousel-inner .carousel-item {
@@ -354,6 +352,10 @@ button:focus {
     padding: 40px;
 }
 
+#our-advantages .container {
+    max-width: 1096px !important;
+}
+
 #our-advantages .title-text {
     text-align: center;
     margin-bottom: 40px;
@@ -367,8 +369,8 @@ button:focus {
 
 #our-advantages .icon img {
     object-fit: cover;
-    width: 80px;
-    height: 80px;
+    width: 40px;
+    height: 42px;
 }
 
 #our-advantages .icon h6 {
@@ -389,18 +391,69 @@ button:focus {
     box-shadow: 0 16px 32px 0 rgba(0, 30, 60, .12);
     border-radius: 8px;
     margin-bottom: 30px;
+    position: relative;
+    height: 500px;
+}
+
+#products .pr-large {
+    height: auto;
+}
+
+#products .pr-large .title-block {
+    padding: 0 40px 24px;
+    display: flex;
+}
+
+#products .pr-large .more {
+    color: #fff;
+    background-color: #db0840;
+    border: none;
+    height: 48px;
+    margin-left: 20px;
+    align-self: flex-end;
+    border-radius: 6px;
+    padding: 18px 27px;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+}
+
+#products .pr-large p {
+    font-size: 16px;
+    margin-bottom: 0;
+    font-weight: 400;
+    color: white;
+}
+
+#products .product .product-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: #00000059;
+    position: absolute;
+    z-index: 1;
 }
 
 #products .title-block {
-    font-weight: 500;
-    text-align: center;
-    padding: 20px 10px;
+    font-weight: 700;
+    padding: 24px;
+    padding-bottom: 22px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 2;
 }
 
 #products .product-title {
-    color: black;
+    color: white;
     font-size: 18px;
-    margin-bottom: 14px;
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+
+#products .row .col-4,
+.col-6 {
+    padding-right: 12px !important;
+    padding-left: 12px !important;
 }
 
 #products .title-text {
@@ -411,35 +464,35 @@ button:focus {
 #products .product .image-block {
     overflow: hidden;
     position: relative;
+    height: 100%;
 }
+
 
 #products .product .image-block .product-img {
     width: 100%;
-    height: 282px;
+    height: 100%;
     object-fit: cover;
     transition: transform .8s cubic-bezier(.35, 0, 0, 1), -webkit-transform .8s cubic-bezier(.35, 0, 0, 1);
 }
 
-#products .product .image-block .full-img {
+/* #products .product .image-block .full-img {
     height: 397px;
-}
+} */
 
-#products .product .image-block .title-position .product-title {
-    color: white;
-}
-
-#products .product .image-block .title-position {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+#products .product .image-block p {
+    margin-top: 8px;
+    font-weight: 500;
+    font-size: 13px;
+    color: #737477;
+    margin-bottom: 0;
 }
 
 #products .product .image-block .large {
     width: 100%;
-    height: 470px;
+    height: 352px;
 }
 
-#products .product .product-img:hover {
+#products .product:hover .product-img {
     transform: scale(1.05);
 }
 
@@ -504,7 +557,7 @@ button:focus {
 }
 
 #advertising .big-icons li {
-    background-image: url("../img/verification_i.png");
+    background-image: url("../img/icon-check.png");
     background-repeat: no-repeat;
     background-size: auto;
     padding-left: 30px;
@@ -513,12 +566,12 @@ button:focus {
 }
 
 #advertising span {
-    font-size: 22px;
+    font-size: 36px;
     margin-top: 19px;
     color: black;
     margin-bottom: 20px;
     display: block;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 #advertising .zengedek span {
@@ -560,14 +613,13 @@ button:focus {
     opacity: 0;
     visibility: hidden;
     z-index: 0;
-    left: 151px;
-    bottom: 26px;
+    left: -134px;
+    bottom: -65px;
     border-radius: 4px;
     -webkit-box-shadow: 0 0px 5px rgba(21, 42, 64, 0.2);
     box-shadow: 0 0px 5px rgba(21, 42, 64, 0.2);
     background: #fff;
-    max-width: 340px;
-    min-width: 340px;
+    white-space: nowrap;
     padding: 20px 27px 21px;
     position: absolute;
     transition: opacity 0.2s, 0.3s;
@@ -582,7 +634,7 @@ button:focus {
 
 #advertising .prices {
     display: flex;
-    margin: 37px 0px 0px;
+    margin: 20px 0px 0px;
     flex-flow: row-reverse;
     justify-content: flex-end;
 }
@@ -594,6 +646,7 @@ button:focus {
     background-repeat: no-repeat;
     background-position: center;
     margin-bottom: 9px;
+    position: absolute;
 }
 
 #advertising .buttons {
@@ -601,7 +654,7 @@ button:focus {
 }
 
 #advertising .buttons .btn_block {
-    background: #3798da;
+    background: #95999b;
     border: none;
     border-radius: 3px;
     transition: 0.3s;
@@ -610,10 +663,10 @@ button:focus {
 }
 
 #advertising .buttons .zengedek {
-    border: 2px solid #7EBB37;
     font-size: 13px;
     border-radius: 3px;
-    background-color: #7EBB37;
+    border: 2px solid #db0a40;
+    background-color: #db0a40;
     font-weight: 500;
     color: white;
     cursor: pointer;
@@ -632,12 +685,8 @@ button:focus {
 }
 
 #advertising .buttons .btn_block:nth-child(2):hover {
-    border: 2px solid #1970c9;
-    background-color: white;
-}
-
-#advertising .buttons .btn_block:nth-child(2):hover span {
-    color: #3798da;
+    border: 2px solid #F20B47;
+    background-color: #F20B47;
 }
 
 #advertising .buttons .btn_block a {
@@ -651,6 +700,8 @@ button:focus {
 }
 
 #advertising .yt-video .item {
+    width: 100%;
+    max-width: 520px;
     cursor: pointer;
     border-radius: 8px;
     overflow: hidden;
@@ -663,10 +714,15 @@ button:focus {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transform: scale(1.24);
 }
 
 #advertising .yt-video .item i:hover {
     background-color: rgba(0, 0, 0, .3);
+}
+
+.addScale {
+    transform: scale(1.2) !important;
 }
 
 #advertising .yt-video .item i {
@@ -688,6 +744,8 @@ button:focus {
     margin: 20px 0px 20px;
     display: flex;
     justify-content: flex-end;
+    width: 100%;
+    height: 370px;
 }
 
 #advertising .tel-num {
@@ -696,7 +754,7 @@ button:focus {
 
 #advertising .rotate-text {
     position: absolute;
-    left: 5px;
+    left: 90px;
     white-space: nowrap;
     top: 50px;
     background-color: transparent;
@@ -722,8 +780,8 @@ button:focus {
 /* //advertising */
 /* write-to-us */
 #write-to-us {
-    background-image: linear-gradient(28deg, #183274, #07548b);
-    padding: 60px 0px;
+    background-color: #001e3c;
+    padding: 40px 0px;
 }
 
 #write-to-us .main-box {
@@ -735,6 +793,7 @@ button:focus {
 #write-to-us .main-box img {
     object-fit: cover;
     margin-right: 30px;
+    width: 140px;
 }
 
 #write-to-us .main-box .chat h1 {
@@ -788,6 +847,35 @@ button:focus {
     margin-bottom: 40px;
 }
 
+#our-work .flex-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#our-work a {
+    font-size: 13px;
+    font-weight: 500;
+    margin-left: 19px;
+    color: #9f9f9f;
+    position: relative;
+    top: -21px;
+    height: fit-content;
+}
+
+#our-work .flex-box a::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #9f9f9f;
+    transition: 0.3s;
+}
+
+#our-work .flex-box a:hover::after {
+    width: 0;
+}
+
 #our-work .projects .image-block {
     overflow: hidden;
     position: relative;
@@ -797,7 +885,8 @@ button:focus {
     width: 100%;
     height: 282px;
     object-fit: cover;
-    transition: transform .8s cubic-bezier(.35, 0, 0, 1), -webkit-transform .8s cubic-bezier(.35, 0, 0, 1);
+    transition: transform .8s cubic-bezier(.35, 0, 0, 1),
+        -webkit-transform .8s cubic-bezier(.35, 0, 0, 1);
 }
 
 
@@ -808,8 +897,10 @@ button:focus {
 #our-work .projects-more {
     border: none;
     padding: 8px 24px;
-    background-color: #db0a40;
-    color: white;
+    border-radius: 6px;
+    border: 1px solid #d8d8d8;
+    padding: 2px 12px;
+    color: black;
     font-weight: 700;
     margin: 0 auto;
     border-radius: 5px;

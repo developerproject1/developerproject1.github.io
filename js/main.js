@@ -16,18 +16,18 @@ $(document).ready(function () {
   })
 
 
-  $(".video-layer").click(function () {
-    $("#video-section .item").removeClass("video-active")
-    $("body").css({
-      overflow: "visible"
-    })
-    $("#video-section .item").css({
-      height: "140px"
-    })
-    $(".video-layer").css({
-      display: "none"
-    })
-  });
+  // $(".video-layer").click(function () {
+  //   $("#video-section .item").removeClass("video-active")
+  //   $("body").css({
+  //     overflow: "visible"
+  //   })
+  //   $("#video-section .item").css({
+  //     height: "140px"
+  //   })
+  //   $(".video-layer").css({
+  //     display: "none"
+  //   })
+  // });
 
   var players = document.querySelectorAll('.youtube-player')
 
