@@ -349,7 +349,7 @@ button:focus {
 /* //slider */
 /* our-advantages */
 #our-advantages {
-    padding: 40px;
+    padding: 40px 0px;
 }
 
 #our-advantages .container {
@@ -381,7 +381,7 @@ button:focus {
 /* products */
 #products {
     background-color: #F8F8F8;
-    padding: 40px;
+    padding: 40px 0px;
 }
 
 #products .product {
