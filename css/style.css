@@ -818,7 +818,7 @@ button:focus {
 /* projects */
 #our-work {
     background-color: #F8F8F8;
-    padding: 40px;
+    padding: 40px 0px;
 }
 
 #our-work .projects {
@@ -856,7 +856,6 @@ button:focus {
 #our-work a {
     font-size: 13px;
     font-weight: 500;
-    margin-left: 19px;
     color: #9f9f9f;
     position: relative;
     top: -21px;
