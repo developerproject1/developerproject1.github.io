@@ -860,6 +860,7 @@ button:focus {
     position: relative;
     top: -21px;
     height: fit-content;
+    margin-left: 0;
 }
 
 #our-work .flex-box a::after {
