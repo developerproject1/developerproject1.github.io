@@ -367,6 +367,10 @@ button:focus {
     text-align: center;
 }
 
+#our-advantages .icon:last-child {
+    margin-bottom: 0px;
+}
+
 #our-advantages .icon img {
     object-fit: cover;
     width: 40px;
@@ -626,10 +630,8 @@ button:focus {
     font-size: 12px;
 }
 
-#advertising .prices h1 {
-    color: #525c70;
+#advertising .prices .tel-num {
     font-size: 28px;
-    margin-right: 15px;
 }
 
 #advertising .prices {
@@ -748,9 +750,9 @@ button:focus {
     height: 370px;
 }
 
-#advertising .tel-num {
+/* #advertising .tel-num {
     font-size: 23px;
-}
+} */
 
 #advertising .rotate-text {
     position: absolute;
@@ -911,3 +913,54 @@ button:focus {
 }
 
 /* //projects */
+/* --------------------media-query------------------------- */
+@media(max-width:991px) {
+    #write-to-us .main-box {
+        flex-direction: column;
+    }
+
+    #advertising .main .why-we-part {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #write-to-us .main-box img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    #write-to-us .main-box .chat {
+        text-align: center;
+    }
+
+    #write-to-us .main-box .chat h1 {
+        font-size: 22px
+    }
+    #our-work .title-text{
+        font-size: 26px;
+    }
+}
+
+@media(max-width:767px) {
+    #our-advantages .icon {
+        margin-bottom: 20px !important;
+    }
+
+    #advertising .main .row {
+        justify-content: center;
+    }
+
+    #advertising .prices .tel-num {
+        font-size: 23px;
+    }
+    #write-to-us .main-box img {
+        width: 110px;
+    }
+    #our-work .title-text{
+        font-size: 22px;
+    }
+    #advertising{
+        padding-top:0px;
+    }
+}
