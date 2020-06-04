@@ -325,6 +325,7 @@ button:focus {
 
 #slider-section .carousel .carousel-inner .carousel-item .item .item-text h2{
     font-size: 25px;
+    max-width: 600px;
 }
 
 #slider-section .carousel .carousel-inner .carousel-item .item .more {
@@ -393,9 +394,6 @@ button:focus {
     padding: 40px 0px;
 }
 
-#products .row .col-lg-4{
-
-}
 
 #products .product {
     overflow: hidden;
@@ -786,6 +784,12 @@ button:focus {
     width: 60px;
     height: 60px;
     margin: 10px;
+    filter:grayscale(1);
+    transition:0.3s;
+}
+
+#advertising .mini-logo img:hover{
+    filter:grayscale(0);
 }
 
 /* //advertising */
