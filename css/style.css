@@ -416,7 +416,7 @@ button:focus {
     display: flex;
 }
 
-#products .pr-large .more {
+#products .pr-large .more:hover {
     border-color: #f30b47;
     background-color: #f30b47;
 }
@@ -433,6 +433,7 @@ button:focus {
     font-size: 22px;
     display: flex;
     align-items: center;
+    transition:0.3s;
 }
 
 #products .pr-large p {
