@@ -393,6 +393,10 @@ button:focus {
     padding: 40px 0px;
 }
 
+#products .row .col-lg-4{
+
+}
+
 #products .product {
     overflow: hidden;
     background-color: #fff;
@@ -459,8 +463,8 @@ button:focus {
     font-weight: 800;
 }
 
-#products .row .col-4,
-.col-6 {
+#products .row .col-lg-4,
+.col-md-6 {
     padding-right: 12px !important;
     padding-left: 12px !important;
 }
@@ -936,7 +940,7 @@ button:focus {
     }
 
     #write-to-us .main-box .chat {
-        text-align: center;
+        text-align: center; 
     }
 
     #write-to-us .main-box .chat h1 {
