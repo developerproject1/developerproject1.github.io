@@ -63,6 +63,11 @@ button:focus {
     padding: 10px 20px;
     display: block;
     text-shadow: 0 0 20px #000f1e;
+    transition:0.3s;
+}
+
+.header .nav-menu .nav-item-child:hover{
+    color: #333333;
 }
 
 .header .nav-menu .nav-item:hover .sub-menu {
@@ -852,7 +857,6 @@ button:focus {
     -webkit-box-shadow: 0 16px 32px 0 rgba(0, 30, 60, .12);
     box-shadow: 0 16px 32px 0 rgba(0, 30, 60, .12);
     border-radius: 8px;
-    margin-bottom: 30px;
 }
 
 #our-work .title-block {
@@ -869,7 +873,7 @@ button:focus {
 
 #our-work .title-text {
     text-align: center;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
     font-size: 36px;
     font-weight: 600;
     margin-right: 20px;
@@ -880,14 +884,15 @@ button:focus {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 15px;
 }
 
-#our-work a {
+#our-work .flex-box a {
     font-size: 13px;
     font-weight: 500;
     color: #9f9f9f;
     position: relative;
-    top: -21px;
+    top: -5px;
     height: fit-content;
     margin-left: 0;
 }
@@ -933,6 +938,9 @@ button:focus {
     font-weight: 700;
     margin: 0 auto;
     border-radius: 5px;
+    font-size: 13px;
+    font-weight: 500;
+    color: black;
 }
 
 /* //projects */
