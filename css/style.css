@@ -316,10 +316,15 @@ button:focus {
     position: absolute;
     transform: scale(1.2);
     transition: 15s;
+    height: 100%;
 }
 
 #slider-section .carousel .carousel-inner .carousel-item .item .item-text {
     color: white;
+}
+
+#slider-section .carousel .carousel-inner .carousel-item .item .item-text h2{
+    font-size: 25px;
 }
 
 #slider-section .carousel .carousel-inner .carousel-item .item .more {
