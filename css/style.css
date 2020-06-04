@@ -415,6 +415,11 @@ button:focus {
     display: flex;
 }
 
+#products .pr-large .more{
+    border-color: #f30b47;
+    background-color: #f30b47;
+}
+
 #products .pr-large .more {
     color: #fff;
     background-color: #db0840;
@@ -655,7 +660,8 @@ button:focus {
     background-repeat: no-repeat;
     background-position: center;
     margin-bottom: 9px;
-    position: absolute;
+    margin-left: 16px;
+    position: relative;
 }
 
 #advertising .buttons {
@@ -781,15 +787,17 @@ button:focus {
 
 #advertising .mini-logo img {
     object-fit: cover;
-    width: 60px;
+    width: 66px;
     height: 60px;
     margin: 10px;
     filter:grayscale(1);
     transition:0.3s;
+    opacity:0.2;
 }
 
 #advertising .mini-logo img:hover{
     filter:grayscale(0);
+    opacity:1;
 }
 
 /* //advertising */
