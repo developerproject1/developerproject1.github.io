@@ -323,9 +323,10 @@ button:focus {
     color: white;
 }
 
-#slider-section .carousel .carousel-inner .carousel-item .item .item-text h2{
-    font-size: 25px;
-    max-width: 600px;
+#slider-section .carousel .carousel-inner .carousel-item .item .item-text h2 {
+    font-size: 53px;
+    max-width: 800px;
+    font-weight: 700;
 }
 
 #slider-section .carousel .carousel-inner .carousel-item .item .more {
@@ -415,7 +416,7 @@ button:focus {
     display: flex;
 }
 
-#products .pr-large .more{
+#products .pr-large .more {
     border-color: #f30b47;
     background-color: #f30b47;
 }
@@ -461,9 +462,9 @@ button:focus {
 
 #products .product-title {
     color: white;
-    font-size: 18px;
+    font-size: 30px;
     margin-bottom: 10px;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 #products .row .col-lg-4,
@@ -790,14 +791,14 @@ button:focus {
     width: 66px;
     height: 60px;
     margin: 10px;
-    filter:grayscale(1);
-    transition:0.3s;
-    opacity:0.2;
+    filter: grayscale(1);
+    transition: 0.3s;
+    opacity: 0.2;
 }
 
-#advertising .mini-logo img:hover{
-    filter:grayscale(0);
-    opacity:1;
+#advertising .mini-logo img:hover {
+    filter: grayscale(0);
+    opacity: 1;
 }
 
 /* //advertising */
@@ -952,13 +953,14 @@ button:focus {
     }
 
     #write-to-us .main-box .chat {
-        text-align: center; 
+        text-align: center;
     }
 
     #write-to-us .main-box .chat h1 {
         font-size: 22px
     }
-    #our-work .title-text{
+
+    #our-work .title-text {
         font-size: 26px;
     }
 }
@@ -975,13 +977,16 @@ button:focus {
     #advertising .prices .tel-num {
         font-size: 23px;
     }
+
     #write-to-us .main-box img {
         width: 110px;
     }
-    #our-work .title-text{
+
+    #our-work .title-text {
         font-size: 22px;
     }
-    #advertising{
-        padding-top:0px;
+
+    #advertising {
+        padding-top: 0px;
     }
 }
