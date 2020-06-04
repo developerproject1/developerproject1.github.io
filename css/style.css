@@ -63,11 +63,11 @@ button:focus {
     padding: 10px 20px;
     display: block;
     text-shadow: 0 0 20px #000f1e;
-    transition:0.3s;
+    transition: 0.3s;
 }
 
-.header .nav-menu .nav-item-child:hover{
-    color: #333333;
+.header .nav-menu .nav-item-child:hover {
+    color: #cccccc;
 }
 
 .header .nav-menu .nav-item:hover .sub-menu {
@@ -98,6 +98,7 @@ button:focus {
 
 .header .nav-menu .nav-item .sub-menu .animate {
     position: relative;
+    transition: 0.3s;
 }
 
 .header .nav-menu .nav-item .sub-menu-child {
@@ -122,6 +123,12 @@ button:focus {
     background-color: #232e43;
     text-align: left;
 }
+
+
+.header .nav-menu .nav-item .sub-menu .animate:hover {
+    background-color: #162331;
+}
+
 
 .header .nav-menu .nav-item .sub-menu {
     width: 195px !important;
@@ -169,11 +176,16 @@ button:focus {
     cursor: pointer;
 }
 
+.header .main-menu .nav-icon .icon-block span:hover {
+    color: #ccc;
+}
+
 .header .main-menu .nav-icon .icon-block span {
     font-size: 12px;
     color: white;
     font-weight: 600;
     margin-top: 6px;
+    transition: 0.3s;
 }
 
 .header .languages .lang-dropdown {
@@ -391,6 +403,7 @@ button:focus {
 
 #our-advantages .icon h6 {
     margin-top: 14px;
+    color: #47484D;
 }
 
 /* //our-advantages */
@@ -438,7 +451,7 @@ button:focus {
     font-size: 22px;
     display: flex;
     align-items: center;
-    transition:0.3s;
+    transition: 0.3s;
 }
 
 #products .pr-large p {
@@ -721,6 +734,10 @@ button:focus {
     opacity: 0.8;
 }
 
+#advertising .yt-video .item:hover i {
+    background-color: rgba(0, 0, 0, .3);
+}
+
 #advertising .yt-video .item {
     width: 100%;
     max-width: 520px;
@@ -739,13 +756,9 @@ button:focus {
     transform: scale(1.24);
 }
 
-#advertising .yt-video .item i:hover {
+/* #advertising .yt-video .item i:hover {
     background-color: rgba(0, 0, 0, .3);
-}
-
-.addScale {
-    transform: scale(1.2) !important;
-}
+} */
 
 #advertising .yt-video .item i {
     position: absolute;

@@ -2,7 +2,7 @@ $(document).ready(function () {
   $('.carousel').carousel({
     interval: 3000
   })
-  $(".icon-block").click(function () {
+  $(".icon-block-lang").click(function () {
     $(".lang-dropdown").slideToggle()
   })
 
